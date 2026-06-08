@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeaverHacks 2026 &mdash; Ally Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* BeaverHacks 2026 — warm brown case-study theme */
+    body { background: #433020; overflow-x: hidden; }
+    .nav { background: #433020 !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
+    .nav-inner a { color: rgba(248,245,227,0.65) !important; }
+    .nav-inner a.nav-home { color: #f8f5e3 !important; }
+    .bh-dark { background: #433020; }
+    .bh-dark-alt { background: #f8f5e3; }
+    .bh-dark .display-heading { color: #f8f5e3; }
+    .bh-dark-alt .display-heading { color: var(--charcoal, #2d2d2d); }
+    .bh-dark .section-label { color: rgba(248,245,227,0.45); }
+    .bh-dark-alt .section-label { color: var(--olive, #7a7a59); }
+    .bh-dark .section-inner { border-top-color: rgba(248,245,227,0.12); }
+    .bh-dark-alt .section-inner { border-top-color: rgba(0,0,0,0.1); }
+    .bh-dark .exp-date { color: rgba(248,245,227,0.45); }
+    .bh-dark-alt .exp-date { color: var(--olive, #7a7a59); }
+    .bh-dark .exp-content h3 { color: #f8f5e3; }
+    .bh-dark-alt .exp-content h3 { color: var(--charcoal, #2d2d2d); }
+    .bh-dark li { color: rgba(248,245,227,0.65); }
+    .bh-dark-alt li { color: #5a5a4a; }
+    .bh-dark .exp-item { border-top-color: rgba(248,245,227,0.12); }
+    .bh-dark-alt .exp-item { border-top-color: rgba(0,0,0,0.1); }
+    .bh-dark .event-card { background: #5e4733; border-color: rgba(248,245,227,0.08); }
+    .bh-dark-alt .event-card { background: #f8f5e3; border-color: rgba(0,0,0,0.12); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html#about">About Me</a>
+      <a href="work.html#experience">Experience</a>
+      <a href="work.html#projects">Projects</a>
+      <a href="index.html" class="nav-home">AC</a>
+      <a href="involvement.html">Involvement</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-mobile-links" id="mobileLinks">
+      <a href="index.html#about">About Me</a>
+      <a href="work.html#experience">Experience</a>
+      <a href="work.html#projects">Projects</a>
+      <a href="involvement.html">Involvement</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="section bh-dark" style="min-height: 80vh; display: flex; align-items: center; background-image: linear-gradient(rgba(20,20,20,0.55), rgba(20,20,20,0.55)), url('bh-event/gp1.JPG'); background-size: cover; background-position: center 48%;">
+    <div class="section-inner" style="border-top: none; max-width: 100%; margin: 0; padding-top: 7rem; padding-left: 4rem; padding-bottom: 5rem;">
+      <div class="section-body">
+        <a href="involvement.html#events" style="display:inline-block; margin-bottom:1.5rem; font-size:0.9rem; color:rgba(248,245,227,0.55); text-decoration:none; letter-spacing:0.05em;">&larr; Back to Involvement</a>
+        <h1 class="display-heading dh-light">BeaverHacks<br/>2026</h1>
+        <p style="color: rgba(248,245,227,0.75); max-width: 560px; margin-top: 1rem;">BeaverHacks is Oregon's largest annual hackathon, hosted by Oregon State University and drawing 500+ students from universities across the country. Over 24 hours, teams of up to four tackle sponsor-based challenges across multiple tracks, building projects from scratch in a fast-paced, collaborative environment. The event bridges the gap between university and industry, giving students direct exposure to the problems and people shaping the tech industry.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details -->
+  <section class="section bh-dark-alt">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">Details</span>
+      </div>
+      <div class="section-body">
+        <h2 class="display-heading">My Role</h2>
+        <p style="max-width: 580px; margin: 1rem 0 2rem; color: #5a5a4a; line-height: 1.7;">Hackathons hold a special place for me &mdash; they're one of the few opportunities to carve out dedicated time for a creative project you'd never get around to otherwise. Having competed in multiple hackathons myself, I love how they push you to pick up new tools, move fast, and get very comfortable with git and merge conflicts.</p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 2rem;">
+          <div>
+            <div style="font-size: 0.8rem; color: var(--olive, #7a7a59); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">Marketing</div>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--charcoal, #2d2d2d); margin-bottom: 1rem; letter-spacing: 0.04em;">Marketing &amp; Outreach</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; color: #5a5a4a; line-height: 1.7; font-size: 0.95rem;">
+              <li style="padding: 0.35rem 0; border-bottom: 1px solid rgba(0,0,0,0.06);">Managed marketing campaigns to drive student participation across 30+ universities.</li>
+              <li style="padding: 0.35rem 0; border-bottom: 1px solid rgba(0,0,0,0.06);">Created promotional content across social media platforms ahead of registration.</li>
+              <li style="padding: 0.35rem 0;">Coordinated with sponsors to amplify visibility through co-branded announcements.</li>
+            </ul>
+          </div>
+          <div>
+            <div style="font-size: 0.8rem; color: var(--olive, #7a7a59); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">Design</div>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--charcoal, #2d2d2d); margin-bottom: 1rem; letter-spacing: 0.04em;">Merch Promotions</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; color: #5a5a4a; line-height: 1.7; font-size: 0.95rem;">
+              <li style="padding: 0.35rem 0; border-bottom: 1px solid rgba(0,0,0,0.06);">Modeled and promoted official BeaverHacks hoodies and merchandise on social media.</li>
+              <li style="padding: 0.35rem 0;">Drove merch sales through promotional posts and content creation.</li>
+            </ul>
+          </div>
+          <div>
+            <div style="font-size: 0.8rem; color: var(--olive, #7a7a59); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">Operations</div>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--charcoal, #2d2d2d); margin-bottom: 1rem; letter-spacing: 0.04em;">Volunteer Coordination</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; color: #5a5a4a; line-height: 1.7; font-size: 0.95rem;">
+              <li style="padding: 0.35rem 0; border-bottom: 1px solid rgba(0,0,0,0.06);">Led and coordinated volunteers throughout the 24-hour event.</li>
+              <li style="padding: 0.35rem 0; border-bottom: 1px solid rgba(0,0,0,0.06);">Managed check-in, logistics, and attendee guidance across multiple event spaces.</li>
+              <li style="padding: 0.35rem 0;">Supported team leads in real-time problem solving during the event day.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticker Designs Section -->
+  <section class="section bh-dark">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">Design</span>
+      </div>
+      <div class="section-body">
+        <div style="display: flex; align-items: center; gap: 3rem;">
+          <!-- Sticker carousel -->
+          <div style="display: flex; align-items: center; gap: 1.25rem; flex-shrink: 0;">
+            <button id="stickerPrev" onclick="stickerCarousel(-1)" aria-label="Previous sticker" style="flex-shrink:0; background: rgba(248,245,227,0.12); border: none; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #f8f5e3; font-size: 1.1rem; transition: background 0.2s;" onmouseover="this.style.background='rgba(248,245,227,0.22)'" onmouseout="this.style.background='rgba(248,245,227,0.12)'">&#8592;</button>
+            <div style="width: 420px; background: #f8f5e3; border-radius: 1rem; padding: 1.25rem 1.25rem 0.75rem; display: flex; flex-direction: column; align-items: center;">
+              <div id="stickerTrack" style="display: flex; align-items: center; justify-content: center;">
+                <img id="stickerImg" src="sticker-1-crop.png" alt="BeaverHacks sticker" style="max-height: 320px; max-width: 100%; width: auto; height: auto; display: block; transition: opacity 0.2s, transform 0.2s;" />
+              </div>
+              <div style="margin-top: 1rem; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: #a0917e;">
+                <span id="stickerCurrent">1</span> / <span id="stickerTotal">6</span>
+              </div>
+            </div>
+            <button id="stickerNext" onclick="stickerCarousel(1)" aria-label="Next sticker" style="flex-shrink:0; background: rgba(248,245,227,0.12); border: none; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #f8f5e3; font-size: 1.1rem; transition: background 0.2s;" onmouseover="this.style.background='rgba(248,245,227,0.22)'" onmouseout="this.style.background='rgba(248,245,227,0.12)'">&#8594;</button>
+          </div>
+          <div style="flex: 1;">
+            <h2 class="display-heading">Sticker Designs</h2>
+            <p style="margin-top: 0.75rem; color: rgba(248,245,227,0.6); font-size: 0.95rem;">Designed event stickers distributed to all 500+ attendees.</p>
+          </div>
+        </div>
+        <script>
+          (function() {
+            var stickers = [
+              { src: 'sticker-1-crop.png',  rot: '-3deg' },
+              { src: 'sticker-9-crop.png',  rot:  '2deg' },
+              { src: 'sticker-10-crop.png', rot: '-2deg' },
+              { src: 'sticker-11-crop.png', rot:  '3deg' },
+              { src: 'sticker-12-crop.png', rot: '-1deg' },
+              { src: 'sticker-13-crop.png', rot:  '2deg' },
+            ];
+            var idx = 0;
+            var img = document.getElementById('stickerImg');
+            var cur = document.getElementById('stickerCurrent');
+            window.stickerCarousel = function(dir) {
+              idx = (idx + dir + stickers.length) % stickers.length;
+              img.style.opacity = '0';
+              img.style.transform = 'rotate(0deg) scale(0.92)';
+              setTimeout(function() {
+                img.src = stickers[idx].src;
+                img.alt = 'BeaverHacks sticker ' + (idx + 1);
+                img.style.transform = 'rotate(' + stickers[idx].rot + ') scale(1)';
+                img.style.opacity = '1';
+                cur.textContent = idx + 1;
+              }, 180);
+            };
+            img.style.transform = 'rotate(' + stickers[0].rot + ') scale(1)';
+          })();
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Merch Photos Section -->
+  <section class="section bh-dark-alt">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">Merch</span>
+      </div>
+      <div class="section-body">
+        <h2 class="display-heading">Merch Photos</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1.5rem;">
+          <div style="border-radius: 0.75rem; overflow: hidden; aspect-ratio: 3/4;">
+            <img src="bh2.jpg" alt="BeaverHacks 2026 merch" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div style="border-radius: 0.75rem; overflow: hidden; aspect-ratio: 3/4;">
+            <img src="bh3.jpg" alt="BeaverHacks 2026 merch modeling" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div style="border-radius: 0.75rem; overflow: hidden; aspect-ratio: 3/4; background: #e8e2d0; display: flex; align-items: center; justify-content: center;">
+            <span style="color: rgba(67,48,32,0.25); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;">Photo</span>
+          </div>
+          <div style="border-radius: 0.75rem; overflow: hidden; aspect-ratio: 3/4; background: #e8e2d0; display: flex; align-items: center; justify-content: center;">
+            <span style="color: rgba(67,48,32,0.25); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;">Photo</span>
+          </div>
+          <div style="border-radius: 0.75rem; overflow: hidden; aspect-ratio: 3/4; background: #e8e2d0; display: flex; align-items: center; justify-content: center;">
+            <span style="color: rgba(67,48,32,0.25); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;">Photo</span>
+          </div>
+          <div style="border-radius: 0.75rem; overflow: hidden; aspect-ratio: 3/4; background: #e8e2d0; display: flex; align-items: center; justify-content: center;">
+            <span style="color: rgba(67,48,32,0.25); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;">Photo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery placeholder -->
+  <section class="section bh-dark-alt" style="padding-bottom: 5rem;">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">Photos</span>
+      </div>
+      <div class="section-body">
+        <h2 class="display-heading">Event Photos</h2>
+        <style>
+          @keyframes evScroll {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          #evTrack.ev-paused { animation-play-state: paused; }
+        </style>
+        <div style="position: relative; width: 100vw; left: 50%; transform: translateX(-50%); overflow: hidden; margin-top: 1.5rem;" id="evOuter">
+          <div id="evTrack" style="display: flex; gap: 16px; width: max-content; animation: evScroll 60s linear infinite;"></div>
+        </div>
+        <script>
+        (function() {
+          var photos = [
+            'bh4.JPG',
+            'bh-event/gp2.JPG',
+            'bh-event/top.jpg',
+            'bh-event/venue.jpg',
+            'bh-event/venue2.jpg',
+            'bh-event/untitled (43 of 275).jpg',
+            'bh-event/untitled (52 of 275).jpg',
+            'bh-event/untitled (59 of 275).jpg',
+            'bh-event/untitled (60 of 275).jpg',
+            'bh-event/untitled (70 of 275).jpg',
+            'bh-event/untitled (89 of 275).jpg',
+            'bh-event/untitled (102 of 275).jpg',
+            'bh-event/untitled (181 of 275).jpg',
+            'bh-event/untitled (187 of 275).jpg',
+            'bh-event/untitled (189 of 275).jpg'
+          ];
+          var GAP = 16;
+          var VISIBLE = 6;
+          var CARD_W = (window.innerWidth - GAP * (VISIBLE - 1)) / VISIBLE;
+          var track = document.getElementById('evTrack');
+
+          photos.concat(photos).forEach(function(src) {
+            var card = document.createElement('div');
+            card.style.cssText = 'flex: 0 0 ' + CARD_W + 'px; height: 300px; overflow: hidden; background: #e8e2d0; cursor: pointer;';
+            var img = document.createElement('img');
+            img.src = src;
+            img.alt = 'BeaverHacks 2026 event photo';
+            img.style.cssText = 'width: 100%; height: 100%; object-fit: cover; display: block;';
+            card.addEventListener('mouseenter', function() { track.classList.add('ev-paused'); });
+            card.addEventListener('mouseleave', function() { track.classList.remove('ev-paused'); });
+            card.appendChild(img);
+            track.appendChild(card);
+          });
+        })();
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contact">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">Contact</span>
+      </div>
+      <div class="section-body contact-body">
+        <h2 class="display-heading">Let's<br/>Connect</h2>
+        <div class="contact-links">
+          <a href="mailto:allyten08@gmail.com" class="contact-link">allyten08@gmail.com</a>
+          <a href="https://linkedin.com/in/allyychen/" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/allyychen</a>
+          <a href="https://github.com/allyytc" target="_blank" rel="noopener" class="contact-link">github.com/allyytc</a>
+          <a href="tel:5038660073" class="contact-link">(503) 866-0073</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-footer-bar">
+      <p>&copy; 2026 Ally Chen</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
