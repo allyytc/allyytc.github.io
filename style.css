@@ -5,6 +5,7 @@
   --cream:       #E8DCC5;   /* Cream */
   --cream-dark:  #D8CCBA;   /* between cream and taupe */
   --dark-bg:     #4B5136;   /* Olive */
+  --olive:       #4B5136;   /* Olive (alias for buttons/accents) */
   --sage:        #8A8F73;   /* Sage */
   --sage-lt:     #B5BAA4;   /* light sage tint */
   --sage-dk:     #4B5136;   /* Olive (darkest green) */
@@ -784,6 +785,7 @@ body {
 
 .involvement-hero-copy {
   margin-top: 0.85rem;
+  padding-left: 2rem;
 }
 
 .involvement-hero-copy p {
