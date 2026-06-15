@@ -40,7 +40,7 @@
         <div class="nav-dropdown">
           <a href="${home('#experience')}">Experience</a>
           <a href="${home('#skills')}">Skills</a>
-          <a href="${RESUME_URL}" target="_blank" rel="noopener">Resume</a>
+          <a href="${home('#contact')}">Contact Me</a>
         </div>
       </div>
       <a href="${RESUME_URL}" class="nav-link nav-link--resume" target="_blank" rel="noopener">Resume</a>
@@ -84,7 +84,7 @@
         <div class="nav-mobile-submenu">
           <a href="${home('#experience')}">Experience</a>
           <a href="${home('#skills')}">Skills</a>
-          <a href="${RESUME_URL}" target="_blank" rel="noopener">Resume</a>
+          <a href="${home('#contact')}">Contact Me</a>
         </div>
       </div>
       <div class="nav-mobile-group">
