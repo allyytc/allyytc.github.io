@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects &mdash; Ally Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=20260614z18" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html#about">About Me</a>
+      <a href="work.html#experience">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html" class="nav-home">AC</a>
+      <a href="involvement.html">Involvement</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-mobile-links" id="mobileLinks">
+      <a href="index.html#about">About Me</a>
+      <a href="work.html#experience">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="involvement.html">Involvement</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="section section-olive projects-hero">
+    <div class="section-inner-full">
+      <span class="projects-hero-label">Projects</span>
+      <h1 class="display-heading dh-light">What I've Been<br/>Building</h1>
+      <p class="projects-hero-intro">A mix of active builds, hackathon wins, class projects, and design work &mdash; spanning full-stack web apps, computer vision, and UI/UX design.</p>
+      <div class="projects-hero-nav">
+        <a href="#in-progress" class="contact-link">In Progress</a>
+        <a href="#hackathons" class="contact-link">Hackathon Wins</a>
+        <a href="#past-projects" class="contact-link">Past Projects</a>
+        <a href="#design-work" class="contact-link">Design Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Projects In Progress
+       ============================================================ -->
+  <section class="section" id="in-progress">
+    <div class="section-inner-full">
+      <div class="proj-section-head">
+        <h2 class="display-heading">Projects In Progress</h2>
+        <p class="proj-section-intro">Active builds I'm currently designing and developing. Click a card to see the full breakdown, current status, and early previews.</p>
+      </div>
+
+      <div class="proj-grid proj-grid-2">
+
+        <!-- Card: Impact Studio Website Redesign -->
+        <div class="proj-card">
+          <button class="proj-card-header" aria-expanded="false">
+            <div class="proj-card-title-row">
+              <h3>Impact Studio Website Redesign</h3>
+              <span class="proj-toggle-icon">+</span>
+            </div>
+            <p class="proj-card-desc">Redesigning OSU Impact Studio's website from the ground up &mdash; fixing structure, hierarchy,<br/>and clarity so visitors understand what Impact Studio does at first glance.</p>
+            <div class="project-tags">
+              <span>Drupal</span><span>HTML/CSS</span><span>UI/UX Design</span><span>Figma</span>
+            </div>
+          </button>
+          <div class="proj-card-detail-wrap">
+            <div class="proj-card-detail">
+              <span class="proj-detail-status">In Progress &mdash; Wireframing &amp; Stakeholder Review</span>
+              <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>Problem</h4>
+                  <p>The current Impact Studio site buries its mission behind jargon-heavy copy, repeated information across pages, and no clear visual hierarchy. Font sizes are inconsistently small, spacing feels unbalanced, and a first-time visitor has to dig through multiple pages just to understand what Impact Studio actually does and who it serves.</p>
+                  <a href="https://impactstudio.oregonstate.edu/" target="_blank" rel="noopener" class="project-link-btn">Current Site &rarr;</a>
+                </div>
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <p>As Web Developer Intern, I'm the bridge between a cross-disciplinary team of marketers, graphic designers, and web contributors &mdash; translating creative visions from people across different disciplines into technical implementations. Day to day that means Figma wireframes, mood boards, and iterative mockups, running designs through the team and stakeholders, and navigating the tension of being both the designer and developer in the room.</p>
+                </div>
+              </div>
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Description</h4>
+                <p>A ground-up redesign introducing a clear homepage hero, streamlined navigation, and structured content sections &mdash; including a lifecycle process visualization, team directory, and portfolio pages &mdash; so faculty, students, and partners can land on the site and immediately understand what Impact Studio is, what it offers, and how to get involved.</p>
+              </div>
+              <div class="proj-detail-divider"></div>
+              <!-- Wireframes: click a button to view the full scrollable page wireframe. -->
+              <div class="thumb-strip-head">
+                <div class="thumb-strip-label">Wireframes</div>
+                <span class="thumb-strip-note">More coming soon&hellip;</span>
+              </div>
+              <div class="thumb-strip">
+                <button class="thumb-btn" data-gallery="impact-studio-homepage" data-index="0">Homepage</button>
+                <button class="thumb-btn" data-gallery="impact-studio-about" data-index="0">About Us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Corvallis Daytime Drop-In Center (Design for America) -->
+        <div class="proj-card">
+          <button class="proj-card-header" aria-expanded="false">
+            <div class="proj-card-title-row">
+              <h3>Corvallis Daytime Drop-In Center Website</h3>
+              <span class="proj-toggle-icon">+</span>
+            </div>
+            <p class="proj-card-desc">Redesigning the Corvallis Daytime Drop-In Center's website to make critical<br/>resources instantly accessible to the community members who need them most.</p>
+            <div class="project-tags">
+              <span>WordPress</span><span>React</span><span>Tailwind CSS</span><span>SQL</span><span>Design Thinking</span><span>Figma</span><span>User Research</span><span>Accessibility</span>
+            </div>
+          </button>
+          <div class="proj-card-detail-wrap">
+            <div class="proj-card-detail">
+              <span class="proj-detail-status">In Progress &mdash; Development Sprint</span>
+              <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>Problem</h4>
+                  <p>The Corvallis Daytime Drop-In Center &mdash; a nonprofit providing basic needs resources, peer support, and social services to unhoused community members in Benton County &mdash; has a website that makes critical information hard to find. For guests who may only have a few minutes on a phone, a site that's difficult to navigate isn't just inconvenient, it's a barrier to getting help.</p>
+                  <a href="https://corvallisddc.org/en/" target="_blank" rel="noopener" class="project-link-btn">Current Site &rarr;</a>
+                </div>
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <p>Project Lead for Design for America, directing an 11-member cross-disciplinary team through discovery, wireframing, design iterations, and front-end development. I meet directly with the CDDC team, translate their requirements into technical specifications, and handle both the design and the code myself. When the DFA term ended, I kept going &mdash; continuing the project alongside a few team members because the work isn't finished.</p>
+                </div>
+              </div>
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Description</h4>
+                <p>The redesign is deeply audience-driven &mdash; built for two distinct users with two distinct needs. For guests, the site is warm, welcoming, and easy to navigate on a phone with no prior tech experience. The navigation is priority-based &mdash; Get Help comes first, followed by Contact Us, About Us, and Donate &mdash; because that's what matters most to someone walking through the door for the first time. For donors, the donation page shifts tone entirely: clean, professional, and trust-building, without losing the center's humanity.</p>
+                <p>Accessibility is non-negotiable. The redesign prioritizes ADA compliance, multilingual support, and a mobile-first layout &mdash; because most guests will only ever access this site from a phone.</p>
+              </div>
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Design Process</h4>
+                <p>Every feedback session is collaborative. We don't come in with a finished design and ask for approval &mdash; we build alongside the nonprofit. Early sessions focused on discovery: understanding who their guests actually are, what they need the moment they land on the site, and what the staff wished the old site had done better. From there we defined two distinct audiences and two distinct design directions, which shaped every decision that followed.</p>
+                <p>Wireframes went through multiple rounds, each one presented back to the CDDC team, marked up, and revised based on their feedback. When something didn't feel right for their guests, we changed it. The dual-tone approach for the donation page came directly out of one of those sessions.</p>
+              </div>
+              <div class="proj-detail-divider"></div>
+              <div class="thumb-strip-head">
+                <div class="thumb-strip-label">Wireframes</div>
+                <span class="thumb-strip-note">More coming soon&hellip;</span>
+              </div>
+              <div class="thumb-strip">
+                <button class="thumb-btn" data-gallery="cddc-home" data-index="0">Home</button>
+                <button class="thumb-btn" data-gallery="cddc-get-help" data-index="0">Get Help</button>
+                <button class="thumb-btn" data-gallery="cddc-contact" data-index="0">Contact Us</button>
+                <button class="thumb-btn" data-gallery="cddc-about" data-index="0">About Us</button>
+                <button class="thumb-btn" data-gallery="cddc-donate" data-index="0">Donate</button>
+              </div>
+              <div class="proj-detail-block" style="margin-top: 2rem; margin-bottom: 1.5rem;">
+                <h4>Upcoming Changes</h4>
+                <p>Following our most recent meeting with the center, the next phase of development includes:</p>
+                <ul>
+                  <li><strong>Updated homepage video</strong> &mdash; replacing the current 2020 promo with new footage that reflects who CDDC is today</li>
+                  <li><strong>Monthly services calendar</strong> &mdash; an interactive calendar showing rotating services like dental visits and community events</li>
+                  <li><strong>Interactive digital storyline</strong> &mdash; an immersive history of the center for guests and donors to explore</li>
+                  <li><strong>Community connections page</strong> &mdash; an art gallery celebrating work created by community members</li>
+                  <li><strong>Full mobile redesign</strong> &mdash; rebuilt from the ground up for phone-first access, since most guests will never use a desktop</li>
+                  <li><strong>Expanded "Your Impact in Action" section</strong> &mdash; on the donation page, showing donors exactly where their contributions go</li>
+                  <li><strong>ADA compliance audit</strong> &mdash; ongoing accessibility review and fixes to meet ADA standards site-wide</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Hackathon Wins
+       ============================================================ -->
+  <section class="section section-dark" id="hackathons">
+    <div class="section-inner-full">
+      <div class="proj-section-head">
+        <h2 class="display-heading dh-light">Hackathon Wins</h2>
+        <p class="proj-section-intro">Projects built (and placed first!) during 24-hour hackathons. Click a card for the full story, team roles, and demo media.</p>
+      </div>
+
+      <div class="proj-grid proj-grid-2">
+
+        <!-- Card: ER Overwatch -->
+        <div class="proj-card">
+          <button class="proj-card-header" aria-expanded="false">
+            <div class="proj-card-title-row">
+              <div>
+                <h3>ER Overwatch</h3>
+                <span class="proj-card-badge">1st Place</span>
+              </div>
+              <span class="proj-toggle-icon">+</span>
+            </div>
+            <!-- TODO: replace with real one-line description -->
+            <p class="proj-card-desc">A real-time dashboard that helps ER staff track patient wait times, bed availability, and triage priority at a glance.</p>
+            <!-- TODO: replace tags with the real tech stack -->
+            <div class="project-tags">
+              <span>React</span><span>Python</span><span>Flask</span><span>WebSockets</span>
+            </div>
+          </button>
+          <div class="proj-card-detail-wrap">
+            <div class="proj-card-detail">
+              <!-- TODO: replace with the real event name + date -->
+              <span class="proj-detail-badge">1st Place &mdash; Hackathon Name 2026</span>
+              <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <!-- TODO: replace with your real role on the team -->
+                  <p>Built the real-time data pipeline and front-end dashboard as part of a 4-person team over a 24-hour build.</p>
+                </div>
+                <div class="proj-detail-block">
+                  <h4>Tech Stack</h4>
+                  <!-- TODO: replace with the real tech stack -->
+                  <p>React, Python, Flask, WebSockets</p>
+                </div>
+              </div>
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Description</h4>
+                <!-- TODO: replace with the real project description -->
+                <p>ER Overwatch gives emergency room staff a live, color-coded view of bed status, patient wait times, and triage priority &mdash; helping reduce response delays during high-traffic periods.</p>
+              </div>
+              <div class="proj-detail-footer">
+                <div class="proj-detail-links">
+                  <!-- TODO: replace with real links -->
+                  <a href="#" class="project-link">Devpost &rarr;</a>
+                  <a href="#" class="project-link">GitHub &rarr;</a>
+                  <a href="#" class="project-link">Demo &rarr;</a>
+                </div>
+              </div>
+              <!-- Thumbnail strip: first slide is the demo video, rest are photos. -->
+              <!-- TODO: replace each .thumb-placeholder with <img src="..." alt="..."> -->
+              <div class="thumb-strip">
+                <button class="thumb" data-gallery="er-overwatch" data-index="0"><div class="thumb-placeholder"><span>Demo Video</span></div></button>
+                <button class="thumb" data-gallery="er-overwatch" data-index="1"><div class="thumb-placeholder"><span>Team Photo</span></div></button>
+                <button class="thumb" data-gallery="er-overwatch" data-index="2"><div class="thumb-placeholder"><span>Dashboard</span></div></button>
+                <button class="thumb" data-gallery="er-overwatch" data-index="3"><div class="thumb-placeholder"><span>Awards</span></div></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: ComboCraft -->
+        <div class="proj-card">
+          <button class="proj-card-header" aria-expanded="false">
+            <div class="proj-card-title-row">
+              <div>
+                <h3>ComboCraft</h3>
+                <span class="proj-card-badge">1st Place</span>
+              </div>
+              <span class="proj-toggle-icon">+</span>
+            </div>
+            <p class="proj-card-desc">A browser-based computer vision combat game where players use real hand gestures captured by webcam.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>MediaPipe</span><span>scikit-learn</span><span>Canvas API</span>
+            </div>
+          </button>
+          <div class="proj-card-detail-wrap">
+            <div class="proj-card-detail">
+              <span class="proj-detail-badge">1st Place &mdash; QuackHacks 2025</span>
+              <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <!-- TODO: replace with your real role on the team -->
+                  <p>Built the gesture-classification pipeline and core game engine as part of a team over a 24-hour hackathon.</p>
+                </div>
+                <div class="proj-detail-block">
+                  <h4>Tech Stack</h4>
+                  <p>JavaScript, HTML/CSS, MediaPipe, scikit-learn, Canvas API</p>
+                </div>
+              </div>
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Description</h4>
+                <p>A browser-based computer vision combat game where players use real hand gestures captured by webcam. Built with MediaPipe, scikit-learn, and the Canvas API &mdash; 95%+ gesture classification accuracy and smooth 60&nbsp;FPS gameplay across 2,000+ lines of animation logic.</p>
+              </div>
+              <div class="proj-detail-footer">
+                <div class="proj-detail-links">
+                  <a href="https://bit.ly/combocraft" target="_blank" rel="noopener" class="project-link">Demo &rarr;</a>
+                  <!-- TODO: replace with real Devpost/GitHub links -->
+                  <a href="#" class="project-link">Devpost &rarr;</a>
+                  <a href="#" class="project-link">GitHub &rarr;</a>
+                </div>
+              </div>
+              <!-- Thumbnail strip: first slide is the demo video, rest are photos. -->
+              <!-- TODO: replace each .thumb-placeholder with <img src="..." alt="..."> -->
+              <div class="thumb-strip">
+                <button class="thumb" data-gallery="combocraft" data-index="0"><div class="thumb-placeholder"><span>Demo Video</span></div></button>
+                <button class="thumb" data-gallery="combocraft" data-index="1"><div class="thumb-placeholder"><span>Gameplay</span></div></button>
+                <button class="thumb" data-gallery="combocraft" data-index="2"><div class="thumb-placeholder"><span>Gesture Detection</span></div></button>
+                <button class="thumb" data-gallery="combocraft" data-index="3"><div class="thumb-placeholder"><span>Team Photo</span></div></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Past Projects
+       ============================================================ -->
+  <section class="section section-taupe" id="past-projects">
+    <div class="section-inner-full">
+      <div class="proj-section-head">
+        <h2 class="display-heading">Past Projects</h2>
+        <p class="proj-section-intro">Class projects and personal builds from the last few years.</p>
+      </div>
+
+      <div class="proj-grid proj-grid-3">
+
+        <!-- Card: Sally's Coffee Shop POS System -->
+        <div class="proj-card">
+          <button class="proj-card-header" aria-expanded="false">
+            <div class="proj-card-title-row">
+              <h3>Sally's Coffee Shop POS System</h3>
+              <span class="proj-toggle-icon">+</span>
+            </div>
+            <p class="proj-card-desc">A full-stack point-of-sale web app with a 5-table relational database, REST API, and a loyalty points system.</p>
+            <div class="project-tags">
+              <span>Node.js</span><span>Express</span><span>MySQL</span><span>REST API</span>
+            </div>
+          </button>
+          <div class="proj-card-detail-wrap">
+            <div class="proj-card-detail">
+              <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <!-- TODO: replace with your real role -->
+                  <p>Designed the database schema and built the full back end for a class project, including all REST endpoints and stored procedures.</p>
+                </div>
+                <div class="proj-detail-block">
+                  <h4>Tech Stack</h4>
+                  <p>Node.js, Express, MySQL, REST API, phpMyAdmin</p>
+                </div>
+              </div>
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Description</h4>
+                <p>A full-stack point-of-sale web app with a 5-table relational database. Features 8+ REST API endpoints for full CRUD, 4 stored procedures for order workflows, and a loyalty points system tracking customer rewards and redemptions.</p>
+              </div>
+              <div class="proj-detail-footer">
+                <div class="proj-detail-links">
+                  <a href="https://bit.ly/sallysPOS" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+                  <!-- TODO: replace with real GitHub link -->
+                  <a href="#" class="project-link">GitHub &rarr;</a>
+                </div>
+              </div>
+              <!-- TODO: replace each .thumb-placeholder with <img src="..." alt="..."> -->
+              <div class="thumb-strip">
+                <button class="thumb" data-gallery="sallys-pos" data-index="0"><div class="thumb-placeholder"><span>Order Screen</span></div></button>
+                <button class="thumb" data-gallery="sallys-pos" data-index="1"><div class="thumb-placeholder"><span>DB Schema</span></div></button>
+                <button class="thumb" data-gallery="sallys-pos" data-index="2"><div class="thumb-placeholder"><span>Loyalty Dashboard</span></div></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Afterlife Metro (details + links only, no thumbnails) -->
+        <div class="proj-card">
+          <button class="proj-card-header" aria-expanded="false">
+            <div class="proj-card-title-row">
+              <div>
+                <h3>Afterlife Metro</h3>
+                <span class="proj-card-badge">Hall of Fame &mdash; CS 290</span>
+              </div>
+              <span class="proj-toggle-icon">+</span>
+            </div>
+            <p class="proj-card-desc">A multiplayer narrative simulation game with dynamic event systems and player-driven storytelling.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>Godot</span><span>JSON</span>
+            </div>
+          </button>
+          <div class="proj-card-detail-wrap">
+            <div class="proj-card-detail">
+              <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <!-- TODO: replace with your real role -->
+                  <p>Designed and implemented the event and character systems as part of a team project over 3 months.</p>
+                </div>
+                <div class="proj-detail-block">
+                  <h4>Tech Stack</h4>
+                  <p>JavaScript, HTML/CSS, Godot, JSON</p>
+                </div>
+              </div>
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Description</h4>
+                <p>A multiplayer narrative simulation game with dynamic event systems and player-driven storytelling. Built 5+ modular systems (character tracking, branching event logic, leaderboard) using JSON-based data models over 3 months.</p>
+              </div>
+              <div class="proj-detail-footer">
+                <div class="proj-detail-links">
+                  <a href="https://bit.ly/afterlife-metro" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Dementia Risk Predictor (details + links only, no thumbnails) -->
+        <div class="proj-card">
+          <button class="proj-card-header" aria-expanded="false">
+            <div class="proj-card-title-row">
+              <h3>Dementia Risk Predictor</h3>
+              <span class="proj-toggle-icon">+</span>
+            </div>
+            <!-- TODO: replace with real one-line description -->
+            <p class="proj-card-desc">A machine learning model that predicts dementia risk from health survey data, exploring feature importance for early screening.</p>
+            <!-- TODO: replace tags with the real tech stack -->
+            <div class="project-tags">
+              <span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Jupyter</span>
+            </div>
+          </button>
+          <div class="proj-card-detail-wrap">
+            <div class="proj-card-detail">
+              <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <!-- TODO: replace with your real role -->
+                  <p>Cleaned and preprocessed survey data, trained and evaluated multiple classification models, and analyzed feature importance.</p>
+                </div>
+                <div class="proj-detail-block">
+                  <h4>Tech Stack</h4>
+                  <p>Python, scikit-learn, Pandas, NumPy, Jupyter</p>
+                </div>
+              </div>
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Description</h4>
+                <!-- TODO: replace with the real project description -->
+                <p>A machine learning pipeline that predicts dementia risk from health and lifestyle survey data, comparing multiple classification models and identifying the strongest predictive features for early-stage screening.</p>
+              </div>
+              <div class="proj-detail-footer">
+                <div class="proj-detail-links">
+                  <!-- TODO: replace with real GitHub link -->
+                  <a href="#" class="project-link">GitHub &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Design Work
+       ============================================================ -->
+  <section class="section" id="design-work">
+    <div class="section-inner-full">
+      <div class="proj-section-head">
+        <h2 class="display-heading">Design Work</h2>
+        <p class="proj-section-intro">Graphic design, stickers, branding, and promotional materials for campus events and organizations. Click any piece to view it full-size.</p>
+      </div>
+
+      <!-- TODO: add or replace images below. Each item needs an <img> and a .design-masonry-caption -->
+      <div class="design-masonry">
+        <button class="design-masonry-item">
+          <img src="coe-graphics/Flyer.png" alt="Cookies and Clubs event flyer" />
+          <span class="design-masonry-caption">Cookies &amp; Clubs Flyer &mdash; COE Student Council</span>
+        </button>
+        <button class="design-masonry-item">
+          <img src="coe-graphics/Instagram%20post.png" alt="Cookies and Clubs Instagram promo" />
+          <span class="design-masonry-caption">Cookies &amp; Clubs Instagram Promo &mdash; COE Student Council</span>
+        </button>
+        <button class="design-masonry-item">
+          <img src="ij-stickers/rocket-crop.png" alt="Innovation Jam rocket sticker" />
+          <span class="design-masonry-caption">Innovation Jam Sticker &mdash; Rocket</span>
+        </button>
+        <button class="design-masonry-item">
+          <img src="ij-stickers/star-crop.png" alt="Innovation Jam star sticker" />
+          <span class="design-masonry-caption">Innovation Jam Sticker &mdash; Star</span>
+        </button>
+        <button class="design-masonry-item">
+          <img src="ij-stickers/airplane-crop.png" alt="Innovation Jam airplane sticker" />
+          <span class="design-masonry-caption">Innovation Jam Sticker &mdash; Airplane</span>
+        </button>
+        <button class="design-masonry-item">
+          <img src="ij-stickers/lightbulb-crop.png" alt="Innovation Jam lightbulb sticker" />
+          <span class="design-masonry-caption">Innovation Jam Sticker &mdash; Lightbulb</span>
+        </button>
+        <button class="design-masonry-item">
+          <img src="eweek-stickers/E-week_OSU.png" alt="E-Week OSU sticker" />
+          <span class="design-masonry-caption">E-Week Sticker &mdash; OSU</span>
+        </button>
+        <button class="design-masonry-item">
+          <img src="eweek-stickers/E-week_Gear_Beaver.png" alt="E-Week gear beaver sticker" />
+          <span class="design-masonry-caption">E-Week Sticker &mdash; Gear Beaver</span>
+        </button>
+        <button class="design-masonry-item">
+          <img src="eweek-stickers/E-week_Sleeping_Beaver.png" alt="E-Week sleeping beaver sticker" />
+          <span class="design-masonry-caption">E-Week Sticker &mdash; Sleeping Beaver</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Ally Chen</p>
+  </footer>
+
+  <!-- Full-screen modal gallery / lightbox (shared by thumbnail strips and Design Work) -->
+  <div class="modal-overlay" id="galleryModal">
+    <button class="modal-close" id="modalClose" aria-label="Close gallery">&times;</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="projects.js"></script>
+  <script>
+    (function() {
+      var card = document.querySelectorAll('#in-progress .proj-card')[1];
+      setTimeout(function() {
+        card.querySelector('.proj-card-header').click();
+        setTimeout(function() {
+          var wrap = card.querySelector('.proj-card-detail-wrap');
+          wrap.style.maxHeight = wrap.scrollHeight + 'px';
+        }, 800);
+      }, 1200);
+    })();
+  </script>
+</body>
+</html>

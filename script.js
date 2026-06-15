@@ -19,7 +19,7 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(
-  '.exp-item, .project-item, .stat, .skills-group, .edu-item, .about-layout'
+  '.exp-item, .project-item, .stat, .skills-group, .edu-item, .about-layout, .proj-card, .design-masonry-item'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
