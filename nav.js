@@ -1,4 +1,6 @@
 (function () {
+  const RESUME_URL = 'allychen-resume2027.pdf';
+
   function getPageFile() {
     const parts = window.location.pathname.split('/');
     const file = parts[parts.length - 1];
@@ -40,6 +42,7 @@
           <a href="${home('#skills')}">Skills</a>
         </div>
       </div>
+      <a href="${RESUME_URL}" class="nav-link" target="_blank" rel="noopener">Resume</a>
       <div class="nav-item has-dropdown">
         <a href="${projects('')}" class="nav-link">Projects</a>
         <div class="nav-dropdown">
@@ -79,6 +82,7 @@
         <div class="nav-mobile-submenu">
           <a href="${home('#experience')}">Experience</a>
           <a href="${home('#skills')}">Skills</a>
+          <a href="${RESUME_URL}" target="_blank" rel="noopener">Resume</a>
         </div>
       </div>
       <div class="nav-mobile-group">
