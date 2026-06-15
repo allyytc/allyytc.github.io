@@ -7,67 +7,59 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260614z18" />
+  <link rel="stylesheet" href="style.css?v=20260619f" />
 </head>
 <body>
 
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="index.html#about">About Me</a>
-      <a href="work.html#experience">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="index.html" class="nav-home">AC</a>
-      <a href="involvement.html">Involvement</a>
-      <a href="index.html#skills">Skills</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-mobile-links" id="mobileLinks">
-      <a href="index.html#about">About Me</a>
-      <a href="work.html#experience">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="involvement.html">Involvement</a>
-      <a href="index.html#skills">Skills</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-  </nav>
+  <nav class="nav" id="nav" aria-label="Primary"></nav>
+  <script src="nav.js?v=1"></script>
 
-  <section class="section section-olive projects-hero">
-    <div class="section-inner-full">
-      <span class="projects-hero-label">Projects</span>
-      <h1 class="display-heading dh-light">What I've Been<br/>Building</h1>
-      <p class="projects-hero-intro">A mix of active builds, hackathon wins, class projects, and design work &mdash; spanning full-stack web apps, computer vision, and UI/UX design.</p>
-      <div class="projects-hero-nav">
-        <a href="#in-progress" class="contact-link">In Progress</a>
-        <a href="#hackathons" class="contact-link">Hackathon Wins</a>
-        <a href="#past-projects" class="contact-link">Past Projects</a>
-        <a href="#design-work" class="contact-link">Design Work</a>
+  <section class="section section-olive page-hero">
+    <div class="section-inner page-hero-inner">
+      <div class="section-body">
+        <div class="involvement-hero-layout involvement-hero-layout--labeled">
+          <div class="involvement-hero-side-label-col">
+            <span class="section-label involvement-hero-side-label involvement-hero-side-label--short">Projects</span>
+          </div>
+          <div class="involvement-hero-media involvement-hero-media--zoom">
+            <img src="combocraft-event/IMG_2989.JPG" alt="ComboCraft project fair demo" class="involvement-hero-photo involvement-hero-photo--zoom" />
+          </div>
+          <div class="involvement-hero-copy">
+            <h1 class="display-heading dh-light">What I've Been<br/>Building</h1>
+            <p>A mix of active builds, hackathon wins, class projects, and design work &mdash; spanning full-stack web apps, computer vision, and UI/UX design.</p>
+            <p class="involvement-hero-lead">Click a card to see the full breakdown, current status, and early previews.</p>
+            <div class="page-hero-actions page-hero-actions--grid">
+              <a href="#in-progress" class="page-hero-btn page-hero-btn--primary">In Progress</a>
+              <a href="#hackathons" class="page-hero-btn page-hero-btn--primary">Hackathon Wins</a>
+              <a href="#past-projects" class="page-hero-btn page-hero-btn--primary">Past Projects</a>
+              <a href="#design-work" class="page-hero-btn page-hero-btn--primary">Design Work</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       Projects In Progress
+       In Progress
        ============================================================ -->
   <section class="section" id="in-progress">
     <div class="section-inner-full">
       <div class="proj-section-head">
-        <h2 class="display-heading">Projects In Progress</h2>
-        <p class="proj-section-intro">Active builds I'm currently designing and developing. Click a card to see the full breakdown, current status, and early previews.</p>
+        <h2 class="display-heading">In Progress</h2>
+        <p class="proj-section-intro">Active builds I'm currently designing and developing.</p>
       </div>
 
       <div class="proj-grid proj-grid-2">
 
         <!-- Card: Impact Studio Website Redesign -->
-        <div class="proj-card">
+        <div class="proj-card" id="project-impact-studio">
           <button class="proj-card-header" aria-expanded="false">
             <div class="proj-card-title-row">
               <h3>Impact Studio Website Redesign</h3>
               <span class="proj-toggle-icon">+</span>
             </div>
-            <p class="proj-card-desc">Redesigning OSU Impact Studio's website from the ground up &mdash; fixing structure, hierarchy,<br/>and clarity so visitors understand what Impact Studio does at first glance.</p>
+            <p class="proj-card-desc">Ground-up redesign of OSU Impact Studio's web presence — new navigation, homepage hierarchy, and content structure in Figma and Drupal.</p>
             <div class="project-tags">
               <span>Drupal</span><span>HTML/CSS</span><span>UI/UX Design</span><span>Figma</span>
             </div>
@@ -75,20 +67,21 @@
           <div class="proj-card-detail-wrap">
             <div class="proj-card-detail">
               <span class="proj-detail-status">In Progress &mdash; Wireframing &amp; Stakeholder Review</span>
+              <div class="proj-detail-block" style="margin-bottom: 0;">
+                <h4>Description</h4>
+                <p>A ground-up redesign introducing a clear homepage hero, streamlined navigation, and structured content sections &mdash; including a lifecycle process visualization, team directory, and portfolio pages for faculty, students, and partners.</p>
+              </div>
+              <div class="proj-detail-divider"></div>
               <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <p>As Web Developer Intern, I'm the bridge between a cross-disciplinary team of marketers, graphic designers, and web contributors &mdash; translating creative visions from people across different disciplines into technical implementations. Day to day that means Figma wireframes, mood boards, and iterative mockups, running designs through the team and stakeholders, and navigating the tension of being both the designer and developer in the room.</p>
+                </div>
                 <div class="proj-detail-block">
                   <h4>Problem</h4>
                   <p>The current Impact Studio site buries its mission behind jargon-heavy copy, repeated information across pages, and no clear visual hierarchy. Font sizes are inconsistently small, spacing feels unbalanced, and a first-time visitor has to dig through multiple pages just to understand what Impact Studio actually does and who it serves.</p>
                   <a href="https://impactstudio.oregonstate.edu/" target="_blank" rel="noopener" class="project-link-btn">Current Site &rarr;</a>
                 </div>
-                <div class="proj-detail-block">
-                  <h4>My Role</h4>
-                  <p>As Web Developer Intern, I'm the bridge between a cross-disciplinary team of marketers, graphic designers, and web contributors &mdash; translating creative visions from people across different disciplines into technical implementations. Day to day that means Figma wireframes, mood boards, and iterative mockups, running designs through the team and stakeholders, and navigating the tension of being both the designer and developer in the room.</p>
-                </div>
-              </div>
-              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
-                <h4>Description</h4>
-                <p>A ground-up redesign introducing a clear homepage hero, streamlined navigation, and structured content sections &mdash; including a lifecycle process visualization, team directory, and portfolio pages &mdash; so faculty, students, and partners can land on the site and immediately understand what Impact Studio is, what it offers, and how to get involved.</p>
               </div>
               <div class="proj-detail-divider"></div>
               <!-- Wireframes: click a button to view the full scrollable page wireframe. -->
@@ -105,13 +98,13 @@
         </div>
 
         <!-- Card: Corvallis Daytime Drop-In Center (Design for America) -->
-        <div class="proj-card">
+        <div class="proj-card" id="project-cddc">
           <button class="proj-card-header" aria-expanded="false">
             <div class="proj-card-title-row">
               <h3>Corvallis Daytime Drop-In Center Website</h3>
               <span class="proj-toggle-icon">+</span>
             </div>
-            <p class="proj-card-desc">Redesigning the Corvallis Daytime Drop-In Center's website to make critical<br/>resources instantly accessible to the community members who need them most.</p>
+            <p class="proj-card-desc">Redesigning the Corvallis Daytime Drop-In Center's website to make critical resources instantly accessible to the community members who need them most.</p>
             <div class="project-tags">
               <span>WordPress</span><span>React</span><span>Tailwind CSS</span><span>SQL</span><span>Design Thinking</span><span>Figma</span><span>User Research</span><span>Accessibility</span>
             </div>
@@ -119,21 +112,22 @@
           <div class="proj-card-detail-wrap">
             <div class="proj-card-detail">
               <span class="proj-detail-status">In Progress &mdash; Development Sprint</span>
+              <div class="proj-detail-block" style="margin-bottom: 0;">
+                <h4>Description</h4>
+                <p>The redesign is deeply audience-driven &mdash; built for two distinct users with two distinct needs. For guests, the site is warm, welcoming, and easy to navigate on a phone with no prior tech experience. The navigation is priority-based &mdash; Get Help comes first, followed by Contact Us, About Us, and Donate &mdash; because that's what matters most to someone walking through the door for the first time. For donors, the donation page shifts tone entirely: clean, professional, and trust-building, without losing the center's humanity.</p>
+                <p>Accessibility is non-negotiable. The redesign prioritizes ADA compliance, multilingual support, and a mobile-first layout &mdash; because most guests will only ever access this site from a phone.</p>
+              </div>
+              <div class="proj-detail-divider"></div>
               <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <p>Project Lead for Design for America, directing an 11-member cross-disciplinary team through discovery, wireframing, design iterations, and front-end development. I meet directly with the CDDC team, translate their requirements into technical specifications, and handle both the design and the code myself. The site serves 300+ daily users. When the DFA term ended, I kept going &mdash; continuing the project alongside a few team members because the work isn't finished.</p>
+                </div>
                 <div class="proj-detail-block">
                   <h4>Problem</h4>
                   <p>The Corvallis Daytime Drop-In Center &mdash; a nonprofit providing basic needs resources, peer support, and social services to unhoused community members in Benton County &mdash; has a website that makes critical information hard to find. For guests who may only have a few minutes on a phone, a site that's difficult to navigate isn't just inconvenient, it's a barrier to getting help.</p>
                   <a href="https://corvallisddc.org/en/" target="_blank" rel="noopener" class="project-link-btn">Current Site &rarr;</a>
                 </div>
-                <div class="proj-detail-block">
-                  <h4>My Role</h4>
-                  <p>Project Lead for Design for America, directing an 11-member cross-disciplinary team through discovery, wireframing, design iterations, and front-end development. I meet directly with the CDDC team, translate their requirements into technical specifications, and handle both the design and the code myself. When the DFA term ended, I kept going &mdash; continuing the project alongside a few team members because the work isn't finished.</p>
-                </div>
-              </div>
-              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
-                <h4>Description</h4>
-                <p>The redesign is deeply audience-driven &mdash; built for two distinct users with two distinct needs. For guests, the site is warm, welcoming, and easy to navigate on a phone with no prior tech experience. The navigation is priority-based &mdash; Get Help comes first, followed by Contact Us, About Us, and Donate &mdash; because that's what matters most to someone walking through the door for the first time. For donors, the donation page shifts tone entirely: clean, professional, and trust-building, without losing the center's humanity.</p>
-                <p>Accessibility is non-negotiable. The redesign prioritizes ADA compliance, multilingual support, and a mobile-first layout &mdash; because most guests will only ever access this site from a phone.</p>
               </div>
               <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
                 <h4>Design Process</h4>
@@ -161,7 +155,7 @@
                   <li><strong>Interactive digital storyline</strong> &mdash; an immersive history of the center for guests and donors to explore</li>
                   <li><strong>Community connections page</strong> &mdash; an art gallery celebrating work created by community members</li>
                   <li><strong>Full mobile redesign</strong> &mdash; rebuilt from the ground up for phone-first access, since most guests will never use a desktop</li>
-                  <li><strong>Expanded "Your Impact in Action" section</strong> &mdash; on the donation page, showing donors exactly where their contributions go</li>
+                  <li><strong>Expanded "Your Impact in Action" section</strong> &mdash; donation-page breakdown showing where contributions go</li>
                   <li><strong>ADA compliance audit</strong> &mdash; ongoing accessibility review and fixes to meet ADA standards site-wide</li>
                 </ul>
               </div>
@@ -172,7 +166,6 @@
       </div>
     </div>
   </section>
-
   <!-- ============================================================
        Hackathon Wins
        ============================================================ -->
@@ -180,7 +173,6 @@
     <div class="section-inner-full">
       <div class="proj-section-head">
         <h2 class="display-heading dh-light">Hackathon Wins</h2>
-        <p class="proj-section-intro">Projects built (and placed first!) during 24-hour hackathons. Click a card for the full story, team roles, and demo media.</p>
       </div>
 
       <div class="proj-grid proj-grid-2">
@@ -189,55 +181,62 @@
         <div class="proj-card">
           <button class="proj-card-header" aria-expanded="false">
             <div class="proj-card-title-row">
-              <div>
+              <div class="proj-card-title-line">
                 <h3>ER Overwatch</h3>
-                <span class="proj-card-badge">1st Place</span>
+                <span class="proj-card-badge proj-card-badge--win">1st Place Overall &mdash; QuackHacks 2026</span>
               </div>
               <span class="proj-toggle-icon">+</span>
             </div>
-            <!-- TODO: replace with real one-line description -->
-            <p class="proj-card-desc">A real-time dashboard that helps ER staff track patient wait times, bed availability, and triage priority at a glance.</p>
-            <!-- TODO: replace tags with the real tech stack -->
+            <p class="proj-card-desc">A computer vision wide-angle surveillance platform that helps understaffed ERs monitor waiting-room patients &mdash; detecting collapses via fall detection, tracking vitals, and building AI casefiles for the doctor while they wait.</p>
             <div class="project-tags">
-              <span>React</span><span>Python</span><span>Flask</span><span>WebSockets</span>
+              <span>Next.js</span><span>React</span><span>TypeScript</span><span>FastAPI</span><span>Python</span><span>MediaPipe</span><span>LiveKit</span><span>Gemini API</span><span>WebSockets</span><span>Computer Vision</span>
             </div>
           </button>
           <div class="proj-card-detail-wrap">
-            <div class="proj-card-detail">
-              <!-- TODO: replace with the real event name + date -->
-              <span class="proj-detail-badge">1st Place &mdash; Hackathon Name 2026</span>
+            <div class="proj-card-detail proj-has-view">
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Description</h4>
+                <p>Across the world, over 1,000 people die each year just waiting for medical care inside an emergency room lobby. Most arrive with symptoms that are survivable on their own &mdash; concussions, chest pain, bruising, spasms &mdash; but over the many hours spent waiting for a room to open up, those same conditions can escalate into strokes, heart attacks, and organ failure. In a crowded ER, someone could collapse and lose consciousness with no one noticing for minutes.</p>
+                <p>ER Overwatch connects live waiting-room footage to automated collapse detection and a nurse dashboard &mdash; giving understaffed ERs real-time alerts and structured patient context before a doctor is available.</p>
+              </div>
+              <div class="proj-view-divider"></div>
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
-                  <!-- TODO: replace with your real role on the team -->
-                  <p>Built the real-time data pipeline and front-end dashboard as part of a 4-person team over a 24-hour build.</p>
+                  <ul>
+                    <li><strong>Frontend development</strong> &mdash; led the nurse dashboard where staff sign patients in, monitor vitals, and receive real-time alerts</li>
+                    <li><strong>Fall detection</strong> &mdash; explored an OpenCV-based approach before moving to Gemini video processing for collapse and loss-of-consciousness detection</li>
+                  </ul>
+                  <p>Getting fast, reliable results meant iterating on how we batch and send footage: overlapping clip windows to catch events at clip boundaries, and working around Gemini token limits as frame volume scaled up.</p>
                 </div>
                 <div class="proj-detail-block">
                   <h4>Tech Stack</h4>
-                  <!-- TODO: replace with the real tech stack -->
-                  <p>React, Python, Flask, WebSockets</p>
+                  <p>Next.js, React, TypeScript, Vite, Tailwind CSS, FastAPI, Python, MediaPipe, LiveKit, Gemini API, REST API, WebSockets, Computer Vision, rPPG, Machine Learning</p>
+                  <div class="proj-detail-links">
+                    <a href="https://eroverwatch.tech" target="_blank" rel="noopener" class="project-link">Live Site &rarr;</a>
+                    <a href="https://github.com/Jonjlim/Quack3-AJAE" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
+                    <a href="https://2026.quackhacks.org/projects/winners/er-overwatch" target="_blank" rel="noopener" class="project-link">QuackHacks 3 &rarr;</a>
+                  </div>
                 </div>
               </div>
               <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
-                <h4>Description</h4>
-                <!-- TODO: replace with the real project description -->
-                <p>ER Overwatch gives emergency room staff a live, color-coded view of bed status, patient wait times, and triage priority &mdash; helping reduce response delays during high-traffic periods.</p>
+                <h4>Features</h4>
+                <ul>
+                  <li><strong>Nurse dashboard</strong> &mdash; sign patients in, monitor vitals, and receive real-time collapse alerts</li>
+                  <li><strong>Fall &amp; collapse detection</strong> &mdash; Gemini video processing and OpenCV movement analysis on live waiting-room footage</li>
+                  <li><strong>Remote vitals (rPPG)</strong> &mdash; heart rate monitoring streamed from the patient&rsquo;s camera to the nurse view</li>
+                  <li><strong>AI patient chatbot</strong> &mdash; chats with waiting patients and builds structured casefiles for staff</li>
+                  <li><strong>Patient wait portal</strong> &mdash; checked-in patients can view their ER data and estimated wait time</li>
+                </ul>
               </div>
-              <div class="proj-detail-footer">
-                <div class="proj-detail-links">
-                  <!-- TODO: replace with real links -->
-                  <a href="#" class="project-link">Devpost &rarr;</a>
-                  <a href="#" class="project-link">GitHub &rarr;</a>
-                  <a href="#" class="project-link">Demo &rarr;</a>
+              <div class="proj-view-divider"></div>
+              <div class="thumb-strip-head">
+                <div class="thumb-strip-label">View Project</div>
+                <div class="thumb-strip">
+                  <button class="thumb-btn" data-gallery="er-overwatch-demo" data-index="0">Demo Video</button>
+                  <button class="thumb-btn" data-gallery="er-overwatch-interface" data-index="0">Interface</button>
+                  <button class="thumb-btn" data-gallery="er-overwatch-gallery" data-index="0">Gallery</button>
                 </div>
-              </div>
-              <!-- Thumbnail strip: first slide is the demo video, rest are photos. -->
-              <!-- TODO: replace each .thumb-placeholder with <img src="..." alt="..."> -->
-              <div class="thumb-strip">
-                <button class="thumb" data-gallery="er-overwatch" data-index="0"><div class="thumb-placeholder"><span>Demo Video</span></div></button>
-                <button class="thumb" data-gallery="er-overwatch" data-index="1"><div class="thumb-placeholder"><span>Team Photo</span></div></button>
-                <button class="thumb" data-gallery="er-overwatch" data-index="2"><div class="thumb-placeholder"><span>Dashboard</span></div></button>
-                <button class="thumb" data-gallery="er-overwatch" data-index="3"><div class="thumb-placeholder"><span>Awards</span></div></button>
               </div>
             </div>
           </div>
@@ -247,50 +246,64 @@
         <div class="proj-card">
           <button class="proj-card-header" aria-expanded="false">
             <div class="proj-card-title-row">
-              <div>
+              <div class="proj-card-title-line">
                 <h3>ComboCraft</h3>
-                <span class="proj-card-badge">1st Place</span>
+                <span class="proj-card-badge proj-card-badge--win">1st Place Overall &mdash; QuackHacks 2025</span>
               </div>
               <span class="proj-toggle-icon">+</span>
             </div>
-            <p class="proj-card-desc">A browser-based computer vision combat game where players use real hand gestures captured by webcam.</p>
+            <p class="proj-card-desc">A gesture-based browser combat game where webcam hand motions cast elemental spells in real time against a multi-phase Demon Boss.</p>
             <div class="project-tags">
-              <span>JavaScript</span><span>MediaPipe</span><span>scikit-learn</span><span>Canvas API</span>
+              <span>JavaScript</span><span>Python</span><span>MediaPipe</span><span>OpenCV</span><span>Flask</span><span>scikit-learn</span>
             </div>
           </button>
           <div class="proj-card-detail-wrap">
-            <div class="proj-card-detail">
-              <span class="proj-detail-badge">1st Place &mdash; QuackHacks 2025</span>
+            <div class="proj-card-detail proj-has-view">
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Description</h4>
+                <p>ComboCraft started as a late-night &ldquo;what if we could fight on screen with our hands?&rdquo; idea and grew into a full browser game set in the Inferno Realm. A fist casts a fireball, an open hand summons an ice shard, a pointed finger calls lightning, and chaining gestures builds combo attacks.</p>
+                <p>Players face a Demon Boss whose behavior evolves across phases as its health drops. Three difficulty settings scale the encounter from easy to hard.</p>
+              </div>
+              <div class="proj-view-divider"></div>
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
-                  <!-- TODO: replace with your real role on the team -->
-                  <p>Built the gesture-classification pipeline and core game engine as part of a team over a 24-hour hackathon.</p>
+                  <ul>
+                    <li><strong>How-to / instructions page</strong> &mdash; built the in-game guide covering each gesture, spell stats, and battle tips</li>
+                    <li><strong>Computer vision overlay</strong> &mdash; developed the player feed composited onto the game canvas; early prototypes used the raw webcam with the full background before moving to MediaPipe Selfie Segmentation to strip the background and isolate the player</li>
+                    <li><strong>Gesture classification</strong> &mdash; helped train a custom sklearn model on hand-gesture samples to improve spell recognition alongside MediaPipe Hands</li>
+                    <li><strong>Game engine</strong> &mdash; built core JavaScript canvas systems for boss phases, spell rendering, combo attacks, and UI effects</li>
+                  </ul>
+                  <p>Getting the overlay to feel natural meant iterating on segmentation quality and frame timing so the cut-out player read clearly against the boss fight without dragging down gameplay.</p>
+                  <p>Tuning gesture timing meant redesigning the classifier when early motions overlapped, and replacing 60&nbsp;FPS backend polling with a smoother command pipeline so spells felt responsive in the browser.</p>
                 </div>
                 <div class="proj-detail-block">
                   <h4>Tech Stack</h4>
-                  <p>JavaScript, HTML/CSS, MediaPipe, scikit-learn, Canvas API</p>
+                  <p>JavaScript, HTML/CSS, Python, Flask, OpenCV, MediaPipe Hands, MediaPipe Selfie Segmentation, scikit-learn</p>
+                  <div class="proj-detail-links">
+                    <a href="https://github.com/alwxngn/MaaaQuackhack" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
+                    <a href="https://devpost.com/software/combocraft-azuynr" target="_blank" rel="noopener" class="project-link">Devpost &rarr;</a>
+                  </div>
                 </div>
               </div>
               <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
-                <h4>Description</h4>
-                <p>A browser-based computer vision combat game where players use real hand gestures captured by webcam. Built with MediaPipe, scikit-learn, and the Canvas API &mdash; 95%+ gesture classification accuracy and smooth 60&nbsp;FPS gameplay across 2,000+ lines of animation logic.</p>
+                <h4>Features</h4>
+                <ul>
+                  <li><strong>Gesture spellcasting</strong> &mdash; real-time hand motions trigger fire, ice, and lightning spells with dual-hand casting</li>
+                  <li><strong>Combo system</strong> &mdash; chain gestures into multi-step attacks for higher damage</li>
+                  <li><strong>Multi-phase Demon Boss</strong> &mdash; evolving animations, attacks, and behavior as health drops</li>
+                  <li><strong>Mana &amp; orb system</strong> &mdash; collect boss energy fragments to restore mana mid-fight</li>
+                  <li><strong>Tutorial &amp; UI</strong> &mdash; how-to-play guide, difficulty select, and pixel-art menus</li>
+                </ul>
               </div>
-              <div class="proj-detail-footer">
-                <div class="proj-detail-links">
-                  <a href="https://bit.ly/combocraft" target="_blank" rel="noopener" class="project-link">Demo &rarr;</a>
-                  <!-- TODO: replace with real Devpost/GitHub links -->
-                  <a href="#" class="project-link">Devpost &rarr;</a>
-                  <a href="#" class="project-link">GitHub &rarr;</a>
+              <div class="proj-view-divider"></div>
+              <div class="thumb-strip-head">
+                <div class="thumb-strip-label">View Project</div>
+                <div class="thumb-strip">
+                  <button class="thumb-btn" data-gallery="combocraft-demo" data-index="0">Demo Video</button>
+                  <button class="thumb-btn" data-gallery="combocraft-interface" data-index="0">Interface</button>
+                  <button class="thumb-btn" data-gallery="combocraft-gallery" data-index="0">Gallery</button>
                 </div>
-              </div>
-              <!-- Thumbnail strip: first slide is the demo video, rest are photos. -->
-              <!-- TODO: replace each .thumb-placeholder with <img src="..." alt="..."> -->
-              <div class="thumb-strip">
-                <button class="thumb" data-gallery="combocraft" data-index="0"><div class="thumb-placeholder"><span>Demo Video</span></div></button>
-                <button class="thumb" data-gallery="combocraft" data-index="1"><div class="thumb-placeholder"><span>Gameplay</span></div></button>
-                <button class="thumb" data-gallery="combocraft" data-index="2"><div class="thumb-placeholder"><span>Gesture Detection</span></div></button>
-                <button class="thumb" data-gallery="combocraft" data-index="3"><div class="thumb-placeholder"><span>Team Photo</span></div></button>
               </div>
             </div>
           </div>
@@ -299,15 +312,13 @@
       </div>
     </div>
   </section>
-
   <!-- ============================================================
        Past Projects
        ============================================================ -->
-  <section class="section section-taupe" id="past-projects">
+  <section class="section" id="past-projects">
     <div class="section-inner-full">
       <div class="proj-section-head">
         <h2 class="display-heading">Past Projects</h2>
-        <p class="proj-section-intro">Class projects and personal builds from the last few years.</p>
       </div>
 
       <div class="proj-grid proj-grid-3">
@@ -329,7 +340,6 @@
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
-                  <!-- TODO: replace with your real role -->
                   <p>Designed the database schema and built the full back end for a class project, including all REST endpoints and stored procedures.</p>
                 </div>
                 <div class="proj-detail-block">
@@ -343,16 +353,8 @@
               </div>
               <div class="proj-detail-footer">
                 <div class="proj-detail-links">
-                  <a href="https://bit.ly/sallysPOS" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
-                  <!-- TODO: replace with real GitHub link -->
-                  <a href="#" class="project-link">GitHub &rarr;</a>
+                  <a href="https://github.com/allyytc/Sallys-POS" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
                 </div>
-              </div>
-              <!-- TODO: replace each .thumb-placeholder with <img src="..." alt="..."> -->
-              <div class="thumb-strip">
-                <button class="thumb" data-gallery="sallys-pos" data-index="0"><div class="thumb-placeholder"><span>Order Screen</span></div></button>
-                <button class="thumb" data-gallery="sallys-pos" data-index="1"><div class="thumb-placeholder"><span>DB Schema</span></div></button>
-                <button class="thumb" data-gallery="sallys-pos" data-index="2"><div class="thumb-placeholder"><span>Loyalty Dashboard</span></div></button>
               </div>
             </div>
           </div>
@@ -378,7 +380,6 @@
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
-                  <!-- TODO: replace with your real role -->
                   <p>Designed and implemented the event and character systems as part of a team project over 3 months.</p>
                 </div>
                 <div class="proj-detail-block">
@@ -406,9 +407,7 @@
               <h3>Dementia Risk Predictor</h3>
               <span class="proj-toggle-icon">+</span>
             </div>
-            <!-- TODO: replace with real one-line description -->
             <p class="proj-card-desc">A machine learning model that predicts dementia risk from health survey data, exploring feature importance for early screening.</p>
-            <!-- TODO: replace tags with the real tech stack -->
             <div class="project-tags">
               <span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Jupyter</span>
             </div>
@@ -418,7 +417,6 @@
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
-                  <!-- TODO: replace with your real role -->
                   <p>Cleaned and preprocessed survey data, trained and evaluated multiple classification models, and analyzed feature importance.</p>
                 </div>
                 <div class="proj-detail-block">
@@ -428,13 +426,11 @@
               </div>
               <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
                 <h4>Description</h4>
-                <!-- TODO: replace with the real project description -->
                 <p>A machine learning pipeline that predicts dementia risk from health and lifestyle survey data, comparing multiple classification models and identifying the strongest predictive features for early-stage screening.</p>
               </div>
               <div class="proj-detail-footer">
                 <div class="proj-detail-links">
-                  <!-- TODO: replace with real GitHub link -->
-                  <a href="#" class="project-link">GitHub &rarr;</a>
+                  <a href="https://github.com/allyytc/dementia-detector" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
                 </div>
               </div>
             </div>
@@ -448,58 +444,193 @@
   <!-- ============================================================
        Design Work
        ============================================================ -->
-  <section class="section" id="design-work">
+  <section class="section section-dark" id="design-work">
     <div class="section-inner-full">
-      <div class="proj-section-head">
-        <h2 class="display-heading">Design Work</h2>
-        <p class="proj-section-intro">Graphic design, stickers, branding, and promotional materials for campus events and organizations. Click any piece to view it full-size.</p>
+      <div class="proj-section-head design-work-head">
+        <h1 class="display-heading">Design Work</h1>
+        <p class="proj-section-intro">These are some of the flyers, stickers, and promotional materials I've designed for campus events and organizations.</p>
       </div>
 
-      <!-- TODO: add or replace images below. Each item needs an <img> and a .design-masonry-caption -->
-      <div class="design-masonry">
-        <button class="design-masonry-item">
-          <img src="coe-graphics/Flyer.png" alt="Cookies and Clubs event flyer" />
-          <span class="design-masonry-caption">Cookies &amp; Clubs Flyer &mdash; COE Student Council</span>
+      <div class="design-subsections">
+
+        <div class="design-subsection" id="design-graphics">
+          <button class="design-subsection-toggle" type="button" aria-expanded="false" aria-controls="design-graphics-panel">
+            <h2 class="display-heading design-subsection-title">Graphics</h2>
+            <span class="design-subsection-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="design-subsection-panel" id="design-graphics-panel">
+            <div class="design-subsection-panel-inner">
+              <p class="design-subsection-intro">Event flyers, social promos, and branding. Click any piece to view it full-size.</p>
+              <div class="design-gallery">
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/Cookies%20%26%20Clubs%202025%20Flyer.png" alt="Cookies and Clubs 2025 event flyer" />
+          </div>
+          <span class="design-gallery-title">Cookies &amp; Clubs</span>
+          <span class="design-gallery-cat">Event Flyer &middot; COE Student Council</span>
         </button>
-        <button class="design-masonry-item">
-          <img src="coe-graphics/Instagram%20post.png" alt="Cookies and Clubs Instagram promo" />
-          <span class="design-masonry-caption">Cookies &amp; Clubs Instagram Promo &mdash; COE Student Council</span>
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/Instagram%20post.png" alt="Cookies and Clubs Instagram promo" />
+          </div>
+          <span class="design-gallery-title">Cookies &amp; Clubs</span>
+          <span class="design-gallery-cat">Social Promo &middot; COE Student Council</span>
         </button>
-        <button class="design-masonry-item">
-          <img src="ij-stickers/rocket-crop.png" alt="Innovation Jam rocket sticker" />
-          <span class="design-masonry-caption">Innovation Jam Sticker &mdash; Rocket</span>
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/Final.png" alt="Donuts with the Dean event flyer" />
+          </div>
+          <span class="design-gallery-title">Donuts with the Dean</span>
+          <span class="design-gallery-cat">Event Flyer &middot; COE Student Council</span>
         </button>
-        <button class="design-masonry-item">
-          <img src="ij-stickers/star-crop.png" alt="Innovation Jam star sticker" />
-          <span class="design-masonry-caption">Innovation Jam Sticker &mdash; Star</span>
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/dwd%20draft%202%20(Instagram%20Post%20(45)).png" alt="Donuts with the Dean Instagram promo" />
+          </div>
+          <span class="design-gallery-title">Donuts with the Dean</span>
+          <span class="design-gallery-cat">Social Promo &middot; COE Student Council</span>
         </button>
-        <button class="design-masonry-item">
-          <img src="ij-stickers/airplane-crop.png" alt="Innovation Jam airplane sticker" />
-          <span class="design-masonry-caption">Innovation Jam Sticker &mdash; Airplane</span>
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/FReps%20flyer.png" alt="First-Year Representatives recruitment flyer" />
+          </div>
+          <span class="design-gallery-title">First-Year Representatives</span>
+          <span class="design-gallery-cat">Recruitment Flyer &middot; COE Student Council</span>
         </button>
-        <button class="design-masonry-item">
-          <img src="ij-stickers/lightbulb-crop.png" alt="Innovation Jam lightbulb sticker" />
-          <span class="design-masonry-caption">Innovation Jam Sticker &mdash; Lightbulb</span>
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/Dam%20Proud.png" alt="Dam Proud Day collage" />
+          </div>
+          <span class="design-gallery-title">Dam Proud Day</span>
+          <span class="design-gallery-cat">Collage &middot; COE Student Council</span>
         </button>
-        <button class="design-masonry-item">
-          <img src="eweek-stickers/E-week_OSU.png" alt="E-Week OSU sticker" />
-          <span class="design-masonry-caption">E-Week Sticker &mdash; OSU</span>
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/letting%20off%20steam%20(Instagram%20Post%20(45)).png" alt="Letting Off Steam Engineers' Week event flyer" />
+          </div>
+          <span class="design-gallery-title">Letting Off Steam</span>
+          <span class="design-gallery-cat">Event Flyer &middot; Engineers' Week</span>
         </button>
-        <button class="design-masonry-item">
-          <img src="eweek-stickers/E-week_Gear_Beaver.png" alt="E-Week gear beaver sticker" />
-          <span class="design-masonry-caption">E-Week Sticker &mdash; Gear Beaver</span>
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/Startup%20Hub%20-%20insta%20drafts.png" alt="Startup Hub kickoff Instagram promo" />
+          </div>
+          <span class="design-gallery-title">Startup Hub Kickoff</span>
+          <span class="design-gallery-cat">Social Promo &middot; Startup Hub</span>
         </button>
-        <button class="design-masonry-item">
-          <img src="eweek-stickers/E-week_Sleeping_Beaver.png" alt="E-Week sleeping beaver sticker" />
-          <span class="design-masonry-caption">E-Week Sticker &mdash; Sleeping Beaver</span>
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/maybe%20a%20flier%20design.png" alt="Startup Hub kickoff event flyer" />
+          </div>
+          <span class="design-gallery-title">Startup Hub Kickoff</span>
+          <span class="design-gallery-cat">Event Flyer &middot; Startup Hub</span>
         </button>
+        <button class="design-gallery-item" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/Graphic%20Designer.png" alt="Graphic Designer recruitment post" />
+          </div>
+          <span class="design-gallery-title">Graphic Designer</span>
+          <span class="design-gallery-cat">Recruitment &middot; Startup Hub</span>
+        </button>
+        <button class="design-gallery-item design-gallery-item--wide" type="button">
+          <div class="design-gallery-media">
+            <img src="graphic-designs/startup%20hub%20TV%20draft%20.png" alt="Startup Hub MU TV display draft" />
+          </div>
+          <span class="design-gallery-title">Startup Hub MU TV</span>
+          <span class="design-gallery-cat">Display Draft &middot; Startup Hub</span>
+        </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="design-subsection" id="design-stickers">
+          <button class="design-subsection-toggle" type="button" aria-expanded="false" aria-controls="design-stickers-panel">
+            <h2 class="display-heading design-subsection-title">Stickers</h2>
+            <span class="design-subsection-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="design-subsection-panel" id="design-stickers-panel">
+            <div class="design-subsection-panel-inner">
+              <div class="sticker-carousels-row">
+                <div class="sticker-carousel-block" id="sticker-carousel-ew">
+                  <div class="sticker-carousel-heading">
+                    <span class="sticker-carousel-year">2026</span>
+                    <h3 class="sticker-carousel-event">Engineers' Week</h3>
+                  </div>
+                  <div class="sticker-carousel">
+                    <button type="button" class="sticker-carousel-btn sticker-carousel-btn--prev" aria-label="Previous Engineers' Week sticker">&#8592;</button>
+                    <div class="sticker-carousel-stage">
+                      <div class="sticker-carousel-media">
+                        <img class="sticker-carousel-img" src="eweek-stickers/E-week_Gear_Beaver.png" alt="Engineers' Week Gear Beaver sticker" />
+                      </div>
+                      <p class="sticker-carousel-count">1 / 5</p>
+                    </div>
+                    <button type="button" class="sticker-carousel-btn sticker-carousel-btn--next" aria-label="Next Engineers' Week sticker">&#8594;</button>
+                  </div>
+                  <a href="eweek.html" class="sticker-carousel-link">View Event</a>
+                </div>
+                <div class="sticker-carousel-block" id="sticker-carousel-ij">
+                  <div class="sticker-carousel-heading">
+                    <span class="sticker-carousel-year">2026</span>
+                    <h3 class="sticker-carousel-event">Innovation Jam</h3>
+                  </div>
+                  <div class="sticker-carousel">
+                    <button type="button" class="sticker-carousel-btn sticker-carousel-btn--prev" aria-label="Previous Innovation Jam sticker">&#8592;</button>
+                    <div class="sticker-carousel-stage">
+                      <div class="sticker-carousel-media">
+                        <img class="sticker-carousel-img" src="ij-stickers/lightbulb-crop.png" alt="Innovation Jam Lightbulb sticker" />
+                      </div>
+                      <p class="sticker-carousel-count">1 / 4</p>
+                    </div>
+                    <button type="button" class="sticker-carousel-btn sticker-carousel-btn--next" aria-label="Next Innovation Jam sticker">&#8594;</button>
+                  </div>
+                  <a href="innovation-jam-2026.html" class="sticker-carousel-link">View Event</a>
+                </div>
+                <div class="sticker-carousel-block" id="sticker-carousel-bh">
+                  <div class="sticker-carousel-heading">
+                    <span class="sticker-carousel-year">2026</span>
+                    <h3 class="sticker-carousel-event">BeaverHacks</h3>
+                  </div>
+                  <div class="sticker-carousel">
+                    <button type="button" class="sticker-carousel-btn sticker-carousel-btn--prev" aria-label="Previous BeaverHacks sticker">&#8592;</button>
+                    <div class="sticker-carousel-stage">
+                      <div class="sticker-carousel-media">
+                        <img class="sticker-carousel-img" src="bh-stickers/sticker-1-crop.png" alt="BeaverHacks sticker 1" />
+                      </div>
+                      <p class="sticker-carousel-count">1 / 6</p>
+                    </div>
+                    <button type="button" class="sticker-carousel-btn sticker-carousel-btn--next" aria-label="Next BeaverHacks sticker">&#8594;</button>
+                  </div>
+                  <a href="beaverhacks-2026.html" class="sticker-carousel-link">View Event</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2026 Ally Chen</p>
-  </footer>
+  <section class="section section-contact" id="contact">
+    <div class="section-inner">
+      <div class="section-label-col">
+        <span class="section-label">Contact</span>
+      </div>
+      <div class="section-body contact-body">
+        <h2 class="display-heading">Let's<br/>Connect</h2>
+        <div class="contact-links">
+          <a href="mailto:allyten08@gmail.com" class="contact-link">allyten08@gmail.com</a>
+          <a href="https://linkedin.com/in/allyychen/" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/allyychen</a>
+          <a href="https://github.com/allyytc" target="_blank" rel="noopener" class="contact-link">github.com/allyytc</a>
+          <a href="tel:5038660073" class="contact-link">(503) 866-0073</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-footer-bar">
+      <p>&copy; 2026 Ally Chen</p>
+    </div>
+  </section>
 
   <!-- Full-screen modal gallery / lightbox (shared by thumbnail strips and Design Work) -->
   <div class="modal-overlay" id="galleryModal">
@@ -508,18 +639,6 @@
   </div>
 
   <script src="script.js"></script>
-  <script src="projects.js"></script>
-  <script>
-    (function() {
-      var card = document.querySelectorAll('#in-progress .proj-card')[1];
-      setTimeout(function() {
-        card.querySelector('.proj-card-header').click();
-        setTimeout(function() {
-          var wrap = card.querySelector('.proj-card-detail-wrap');
-          wrap.style.maxHeight = wrap.scrollHeight + 'px';
-        }, 800);
-      }, 1200);
-    })();
-  </script>
+  <script src="projects.js?v=20260620a"></script>
 </body>
 </html>

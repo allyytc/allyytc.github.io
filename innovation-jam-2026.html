@@ -11,9 +11,26 @@
   <style>
     /* Innovation Jam '26 — magenta/plum case-study theme */
     body { background: #2b1830; overflow-x: hidden; }
-    .nav { background: #3a2545 !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
-    .nav-inner a { color: rgba(248,241,232,0.65) !important; }
-    .nav-inner a.nav-home { color: #f8f1e8 !important; }
+    .nav {
+      --nav-bg: #3a2545;
+      --nav-border: rgba(255,255,255,0.08);
+      --nav-link: rgba(248,241,232,0.65);
+      --nav-link-hover: #f8f1e8;
+      --nav-home: #f8f1e8;
+      --nav-dropdown-bg: #3a2545;
+      --nav-dropdown-border: rgba(255,255,255,0.12);
+      --nav-dropdown-link: rgba(248,241,232,0.65);
+      --nav-dropdown-link-hover: #f8f1e8;
+      --nav-dropdown-link-hover-bg: rgba(255,255,255,0.08);
+      --nav-dropdown-label: rgba(248,241,232,0.45);
+      --nav-mobile-bg: #3a2545;
+      --nav-mobile-border: rgba(255,255,255,0.12);
+      --nav-mobile-link: rgba(248,241,232,0.65);
+      --nav-mobile-link-hover: #f8f1e8;
+      --nav-mobile-submenu-border: rgba(255,255,255,0.12);
+      --nav-mobile-label: rgba(248,241,232,0.45);
+      --nav-toggle-bar: #f8f1e8;
+    }
     .ij-dark { background: #2b1830; }
     .ij-alt { background: #f8f1e8; }
     .ij-dark .display-heading { color: #f8f1e8; }
@@ -29,28 +46,8 @@
 </head>
 <body>
 
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="index.html#about">About Me</a>
-      <a href="work.html#experience">Experience</a>
-      <a href="work.html#projects">Projects</a>
-      <a href="index.html" class="nav-home">AC</a>
-      <a href="involvement.html">Involvement</a>
-      <a href="index.html#skills">Skills</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-mobile-links" id="mobileLinks">
-      <a href="index.html#about">About Me</a>
-      <a href="work.html#experience">Experience</a>
-      <a href="work.html#projects">Projects</a>
-      <a href="involvement.html">Involvement</a>
-      <a href="index.html#skills">Skills</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-  </nav>
+  <nav class="nav" id="nav" aria-label="Primary"></nav>
+  <script src="nav.js?v=1"></script>
 
   <!-- Hero -->
   <section class="section ij-dark" style="min-height: 80vh; display: flex; align-items: center; background-image: linear-gradient(rgba(43,24,48,0.72), rgba(80,20,50,0.55)), url('innovation-26/IMG_2519.JPG'); background-size: cover; background-position: center 30%;">
@@ -58,7 +55,7 @@
       <div class="section-body">
         <a href="involvement.html#events" style="display:inline-block; margin-bottom:1.5rem; font-size:0.9rem; color:rgba(248,241,232,0.55); text-decoration:none; letter-spacing:0.05em;">&larr; Back to Involvement</a>
         <h1 class="display-heading dh-light" style="font-size: clamp(4rem, 9vw, 7rem);">Innovation<br/>Jam 2026</h1>
-        <p style="color: rgba(248,241,232,0.95); max-width: 560px; margin-top: 1rem; font-size: 1.1rem; line-height: 1.7; text-shadow: 0 1px 12px rgba(0,0,0,0.8), 0 2px 24px rgba(0,0,0,0.6);">Innovation Jam is the Willamette Valley's flagship student innovation and entrepreneurship event, bringing founders, builders, and the regional startup community to Oregon State University for a day of pitches, workshops, and collaboration. For Innovation Jam 2026, Startup Hub was entrusted to organize the event &mdash; the first time a student organization has taken the reins from inventOR.</p>
+        <p style="color: rgba(248,241,232,0.95); max-width: 560px; margin-top: 1rem; font-size: 1.1rem; line-height: 1.7; text-shadow: 0 1px 12px rgba(0,0,0,0.8), 0 2px 24px rgba(0,0,0,0.6);">The Willamette Valley's flagship student innovation and entrepreneurship event &mdash; a full day of pitches, workshops, and collaboration at Oregon State University.</p>
       </div>
     </div>
   </section>
