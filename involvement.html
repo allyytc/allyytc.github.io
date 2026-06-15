@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260620b" />
+  <link rel="stylesheet" href="style.css?v=20260620c" />
 </head>
 <body>
 
@@ -74,8 +74,17 @@
           .org-tab.active .org-tab-date { color: rgba(232,220,197,0.5); }
 
           .org-panel { background: var(--dark-bg); border-radius: 0.75rem; padding: 1.5rem; margin-top: 1rem; margin-left: 4rem; max-width: 100%; justify-self: start; }
-          .org-photo-row { display: flex; gap: 1.5rem; align-items: stretch; }
-          .org-photo-frame { position: relative; border-radius: 0.5rem; overflow: hidden; background: rgba(255,255,255,0.06); aspect-ratio: 3 / 4; flex: 1; min-width: 0; }
+          .org-photo-row { display: flex; gap: 1.5rem; align-items: flex-start; }
+          .org-photo-frame {
+            position: relative;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            background: rgba(255,255,255,0.06);
+            flex: 0 0 clamp(240px, 34%, 360px);
+            width: clamp(240px, 34%, 360px);
+            max-width: 360px;
+            aspect-ratio: 3 / 4;
+          }
           .org-photo-frame.landscape { background: none; }
           .org-photo-frame.landscape img { width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; object-position: center; border-radius: 0.5rem; }
           .org-photo-frame.landscape img[src$="IMG_2963.JPG"] { width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: cover; object-position: 75% center; }
@@ -91,7 +100,7 @@
           .org-photo-frame.landscape img[src$="IMG_8555.jpg"] { width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: cover; object-position: center; }
           .org-photo-frame.landscape img[src$="IMG_8562.jpg"] { width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: cover; object-position: center; }
           .org-photo-frame img[src$="IMG_0068.JPG"] { transform: scale(1.35); transform-origin: center 70%; }
-          .org-panel-desc-col { display: flex; flex-direction: column; flex: 1.2; min-width: 0; padding: 0 1.5rem 0 1rem; }
+          .org-panel-desc-col { display: flex; flex-direction: column; flex: 1; min-width: 0; padding: 0 0 0 0.5rem; }
           .org-panel-title { font-family: var(--font-display); font-size: 2.4rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--cream); margin: 0 0 0.5rem; }
           .org-panel-meta { display: flex; flex-direction: column; gap: 0.2rem; margin-bottom: 1rem; }
           .org-panel-role { font-size: 0.85rem; color: rgba(232,220,197,0.85); letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
@@ -128,11 +137,23 @@
           @media (max-width: 1280px) {
             .org-panel { margin-left: 0; }
             .org-panel-title { font-size: 2rem; }
+            .org-photo-frame {
+              flex: 0 0 clamp(220px, 42%, 320px);
+              width: clamp(220px, 42%, 320px);
+              max-width: 320px;
+            }
           }
 
           @media (max-width: 1024px) {
             .org-layout { grid-template-columns: 1fr; gap: 1.5rem; }
-            .org-photo-row { flex-direction: column; }
+            .org-photo-row { flex-direction: column; align-items: stretch; }
+            .org-photo-frame {
+              flex: none;
+              width: 100%;
+              max-width: 420px;
+              margin: 0 auto;
+            }
+            .org-panel-desc-col { padding: 0; }
             .org-panel { max-width: 100%; margin-left: 0; }
           }
         </style>
@@ -283,7 +304,7 @@
           'cookies-clubs/IMG_2346.jpg',
           'cookies-clubs/IMG_2360.jpg',
           'cookies-clubs/IMG_2368.jpg',
-          'cookies-clubs/IMG_8728.jpg'
+          'eweek/IMG_8728.jpg'
         ],
         description: [
           "As Vice President of Outreach for the College of Engineering Student Council, I'm the voice for 10K+ engineering students in faculty discussions and university-level decisions — from curriculum changes to tuition policy. I manage outreach and communications across 50+ student organizations and help allocate $200K+ in funding alongside the VP of Finance.",
@@ -384,13 +405,27 @@
 
     var currentOrg = 'coe';
     var currentPhoto = 0;
+    var orgPhotoCache = {};
+    var orgPhotoDisplayedSrc = '';
+
+    function preloadOrgPhotos(photos) {
+      photos.forEach(function (src) {
+        if (orgPhotoCache[src]) return;
+        var img = new Image();
+        img.decoding = 'async';
+        img.src = src;
+        orgPhotoCache[src] = img;
+      });
+    }
 
     function selectOrg(id) {
       currentOrg = id;
       currentPhoto = 0;
+      orgPhotoDisplayedSrc = '';
       document.querySelectorAll('.org-tab').forEach(function (tab) {
         tab.classList.toggle('active', tab.dataset.org === id);
       });
+      preloadOrgPhotos(orgsData[id].photos);
       renderOrgPanel();
     }
 
@@ -429,11 +464,13 @@
       var frame = display.parentElement;
       frame.classList.remove('landscape');
       if (data.photos.length) {
+        var src = data.photos[currentPhoto];
         var img = display.querySelector('img');
         if (!img) {
           display.innerHTML = '';
           img = document.createElement('img');
           img.alt = '';
+          img.decoding = 'async';
           display.appendChild(img);
         }
         counter.style.display = hasMultiple ? '' : 'none';
@@ -441,14 +478,19 @@
           document.getElementById('orgPhotoCurrent').textContent = currentPhoto + 1;
           document.getElementById('orgPhotoTotal').textContent = data.photos.length;
         }
-        var checkOrientation = function () {
-          frame.classList.remove('landscape');
-          if (img.naturalWidth > img.naturalHeight) frame.classList.add('landscape');
+        var applyOrientation = function () {
+          frame.classList.toggle('landscape', img.naturalWidth > img.naturalHeight);
         };
-        img.onload = checkOrientation;
-        img.src = data.photos[currentPhoto];
-        if (img.complete && img.naturalWidth) checkOrientation();
+        if (orgPhotoDisplayedSrc !== src) {
+          orgPhotoDisplayedSrc = src;
+          img.onload = applyOrientation;
+          img.src = src;
+          if (img.complete && img.naturalWidth) applyOrientation();
+        } else if (img.complete && img.naturalWidth) {
+          applyOrientation();
+        }
       } else {
+        orgPhotoDisplayedSrc = '';
         display.innerHTML = '<div class="org-photo-placeholder">Photos coming soon</div>';
         counter.style.display = 'none';
       }
@@ -478,6 +520,7 @@
       });
     }
 
+    preloadOrgPhotos(orgsData.coe.photos);
     renderOrgPanel();
     initOrgFromHash();
   </script>
