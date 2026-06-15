@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260622e" />
+  <link rel="stylesheet" href="style.css?v=20260623k" />
   <style>
     /* BeaverHacks 2026 — warm brown case-study theme */
     body { background: #433020; overflow-x: hidden; }
@@ -54,7 +54,7 @@
 <body class="event-page">
 
   <nav class="nav" id="nav" aria-label="Primary"></nav>
-  <script src="nav.js?v=6"></script>
+  <script src="nav.js?v=7"></script>
 
   <!-- Hero -->
   <section class="section bh-dark" style="min-height: 80vh; display: flex; align-items: center; background-image: linear-gradient(rgba(20,20,20,0.55), rgba(20,20,20,0.55)), url('bh-event/gp1.JPG'); background-size: cover; background-position: center 48%;">
@@ -310,6 +310,25 @@
           applyTransform(false);
         });
 
+        // Wait for first-set images so width: auto resolves before measuring speed.
+        var firstSetImgs = [];
+        for (var fi = 0; fi < N; fi++) {
+          var firstImg = track.children[fi].querySelector('img');
+          firstImg.loading = 'eager';
+          firstSetImgs.push(firstImg);
+        }
+        function remeasureFromLoads() {
+          measure();
+          applyTransform(false);
+        }
+        firstSetImgs.forEach(function(img) {
+          if (img.complete && img.naturalWidth > 0) remeasureFromLoads();
+          else {
+            img.addEventListener('load', remeasureFromLoads);
+            img.addEventListener('error', remeasureFromLoads);
+          }
+        });
+
         measure();
         applyTransform(false);
         requestAnimationFrame(tick);
@@ -552,23 +571,23 @@
     </div>
   </section>
 
-  <section class="section section-contact" id="contact" style="background: #433020; border-top: none;">
+  <section class="section section-contact section-contact--beaverhacks" id="contact">
     <div class="section-inner">
       <div class="section-label-col">
-        <span class="section-label" style="color: rgba(248,245,227,0.45);">Contact</span>
+        <span class="section-label">Contact</span>
       </div>
       <div class="section-body contact-body">
-        <h2 class="display-heading" style="color: #f8f5e3;">Let's<br/>Connect</h2>
+        <h2 class="display-heading">Let's<br/>Connect</h2>
         <div class="contact-links">
-          <a href="allychen-resume2027.pdf" class="contact-link" style="color: rgba(248,245,227,0.65); border-bottom-color: rgba(248,245,227,0.2);">Resume</a>
-          <a href="mailto:allyten08@gmail.com" class="contact-link" style="color: rgba(248,245,227,0.65); border-bottom-color: rgba(248,245,227,0.2);">allyten08@gmail.com</a>
-          <a href="https://linkedin.com/in/allyychen/" target="_blank" rel="noopener" class="contact-link" style="color: rgba(248,245,227,0.65); border-bottom-color: rgba(248,245,227,0.2);">linkedin.com/in/allyychen</a>
-          <a href="https://github.com/allyytc" target="_blank" rel="noopener" class="contact-link" style="color: rgba(248,245,227,0.65); border-bottom-color: rgba(248,245,227,0.2);">github.com/allyytc</a>
-          <a href="tel:5038660073" class="contact-link" style="color: rgba(248,245,227,0.65); border-bottom-color: rgba(248,245,227,0.2);">(503) 866-0073</a>
+          <a href="allychen-resume2027.pdf" class="contact-link" target="_blank" rel="noopener">Resume</a>
+          <a href="mailto:allyten08@gmail.com" class="contact-link">allyten08@gmail.com</a>
+          <a href="https://linkedin.com/in/allyychen/" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/allyychen</a>
+          <a href="https://github.com/allyytc" target="_blank" rel="noopener" class="contact-link">github.com/allyytc</a>
+          <a href="tel:5038660073" class="contact-link">(503) 866-0073</a>
         </div>
       </div>
     </div>
-    <div class="contact-footer-bar" style="border-top-color: rgba(248,245,227,0.12); color: rgba(248,245,227,0.35);">
+    <div class="contact-footer-bar">
       <p>&copy; 2026 Ally Chen</p>
     </div>
   </section>

@@ -7,12 +7,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260622e" />
+  <link rel="stylesheet" href="style.css?v=20260623k" />
 </head>
 <body>
 
   <nav class="nav" id="nav" aria-label="Primary"></nav>
-  <script src="nav.js?v=6"></script>
+  <script src="nav.js?v=7"></script>
 
   <section class="section section-olive page-hero">
     <div class="section-inner page-hero-inner">
@@ -38,8 +38,7 @@
     </div>
   </section>
 
-  <section class="section" id="events">
-      <section class="section" id="clubs">
+  <section class="section" id="clubs">
         <style>
           .org-layout {
             display: grid;
@@ -168,15 +167,23 @@
           }
 
           @media (max-width: 768px) {
-            .org-layout { gap: 1.25rem; }
-            .org-tab { padding: 0.85rem 1rem; }
-            .org-panel { padding: 1rem; margin-top: 0.5rem; }
+            .org-layout { gap: 0.75rem; }
+            .org-tab { padding: 0.65rem 0.85rem; }
+            .org-tab h3 { font-size: clamp(0.95rem, 4.2vw, 1.15rem); margin-bottom: 0.3rem; }
+            .org-tab-role { font-size: 0.72rem; }
+            .org-tab-date { font-size: 0.62rem; }
+            .org-panel { padding: 0.85rem 1rem; margin-top: 0.5rem; }
+            .org-panel-title { font-size: clamp(1.22rem, 5.6vw, 1.52rem); margin-bottom: 0.4rem; }
+            .org-panel-role { font-size: 0.72rem; }
+            .org-panel-date { font-size: 0.62rem; }
+            .org-panel-desc { font-size: 0.64rem; line-height: 1.55; }
+            .org-panel-desc p { margin-bottom: 0.65rem; }
+            .org-left-col .display-heading { margin-bottom: 1rem; }
             .org-photo-frame {
               width: 100%;
               max-width: 100%;
               margin: 0;
             }
-            .org-left-col .display-heading { margin-bottom: 1.25rem; }
           }
         </style>
         <div class="section-inner org-section-inner" style="position: relative; padding-bottom: 4rem; max-width: 100%; margin: 0;">
@@ -244,7 +251,7 @@
           </div>
         </div>
       </section>
-    <div class="section-olive events-section-olive">
+    <section class="section section-olive events-section-olive" id="events">
       <div class="events-section-head">
         <h2 class="display-heading dh-light">Events</h2>
       </div>
@@ -284,8 +291,7 @@
           </a>
 
         </div>
-    </div>
-  </section>
+    </section>
 
 
 
@@ -452,6 +458,15 @@
 
     function initOrgFromHash() {
       var hash = window.location.hash;
+      if (hash === '#events') {
+        var events = document.getElementById('events');
+        if (events) {
+          setTimeout(function () {
+            events.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+        return;
+      }
       if (!hash.startsWith('#clubs-')) return;
       var id = hash.slice(7);
       if (!orgsData[id]) return;

@@ -68,8 +68,8 @@
       <div class="nav-item has-dropdown">
         <a href="${involvement('#events')}" class="nav-link">Events</a>
         <div class="nav-dropdown">
-          <a href="innovation-jam-2026.html">Innovation Jam</a>
           <a href="beaverhacks-2026.html">BeaverHacks</a>
+          <a href="innovation-jam-2026.html">Innovation Jam</a>
           <a href="eweek.html">Engineers' Week</a>
         </div>
       </div>
@@ -125,8 +125,8 @@
           <button type="button" class="nav-mobile-group-toggle" aria-expanded="false" aria-label="Toggle Events submenu"></button>
         </div>
         <div class="nav-mobile-submenu">
-          <a href="innovation-jam-2026.html">Innovation Jam</a>
           <a href="beaverhacks-2026.html">BeaverHacks</a>
+          <a href="innovation-jam-2026.html">Innovation Jam</a>
           <a href="eweek.html">Engineers' Week</a>
         </div>
       </div>

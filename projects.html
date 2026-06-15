@@ -7,12 +7,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260622e" />
+  <link rel="stylesheet" href="style.css?v=20260624j" />
 </head>
 <body>
 
   <nav class="nav" id="nav" aria-label="Primary"></nav>
-  <script src="nav.js?v=6"></script>
+  <script src="nav.js?v=7"></script>
 
   <section class="section section-olive page-hero">
     <div class="section-inner page-hero-inner">
@@ -52,11 +52,11 @@
 
       <div class="proj-grid proj-grid-2">
 
-        <!-- Card: Impact Studio Website Redesign -->
+        <!-- Card: Impact Studio Website -->
         <div class="proj-card" id="project-impact-studio">
           <button class="proj-card-header" aria-expanded="false">
             <div class="proj-card-title-row">
-              <h3>Impact Studio Website Redesign</h3>
+              <h3>Impact Studio Website</h3>
               <span class="proj-toggle-icon">+</span>
             </div>
             <p class="proj-card-desc">Ground-up redesign of OSU Impact Studio's web presence — new navigation, homepage hierarchy, and content structure in Figma and Drupal.</p>
@@ -194,12 +194,12 @@
           </button>
           <div class="proj-card-detail-wrap">
             <div class="proj-card-detail proj-has-view">
-              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+              <div class="proj-detail-block" style="margin-bottom: 0;">
                 <h4>Description</h4>
                 <p>Across the world, over 1,000 people die each year just waiting for medical care inside an emergency room lobby. Most arrive with symptoms that are survivable on their own &mdash; concussions, chest pain, bruising, spasms &mdash; but over the many hours spent waiting for a room to open up, those same conditions can escalate into strokes, heart attacks, and organ failure. In a crowded ER, someone could collapse and lose consciousness with no one noticing for minutes.</p>
                 <p>ER Overwatch connects live waiting-room footage to automated collapse detection and a nurse dashboard &mdash; giving understaffed ERs real-time alerts and structured patient context before a doctor is available.</p>
               </div>
-              <div class="proj-view-divider"></div>
+              <div class="proj-detail-divider"></div>
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
@@ -212,11 +212,9 @@
                 <div class="proj-detail-block">
                   <h4>Tech Stack</h4>
                   <p>Next.js, React, TypeScript, Vite, Tailwind CSS, FastAPI, Python, MediaPipe, LiveKit, Gemini API, REST API, WebSockets, Computer Vision, rPPG, Machine Learning</p>
-                  <div class="proj-detail-links">
-                    <a href="https://eroverwatch.tech" target="_blank" rel="noopener" class="project-link">Live Site &rarr;</a>
-                    <a href="https://github.com/Jonjlim/Quack3-AJAE" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
-                    <a href="https://2026.quackhacks.org/projects/winners/er-overwatch" target="_blank" rel="noopener" class="project-link">QuackHacks 3 &rarr;</a>
-                  </div>
+                  <a href="https://eroverwatch.tech" target="_blank" rel="noopener" class="project-link-btn">Live Site &rarr;</a>
+                  <a href="https://github.com/Jonjlim/Quack3-AJAE" target="_blank" rel="noopener" class="project-link-btn">GitHub &rarr;</a>
+                  <a href="https://2026.quackhacks.org/projects/winners/er-overwatch" target="_blank" rel="noopener" class="project-link-btn">QuackHacks 3 &rarr;</a>
                 </div>
               </div>
               <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
@@ -259,12 +257,12 @@
           </button>
           <div class="proj-card-detail-wrap">
             <div class="proj-card-detail proj-has-view">
-              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+              <div class="proj-detail-block" style="margin-bottom: 0;">
                 <h4>Description</h4>
                 <p>ComboCraft started as a late-night &ldquo;what if we could fight on screen with our hands?&rdquo; idea and grew into a full browser game set in the Inferno Realm. A fist casts a fireball, an open hand summons an ice shard, a pointed finger calls lightning, and chaining gestures builds combo attacks.</p>
                 <p>Players face a Demon Boss whose behavior evolves across phases as its health drops. Three difficulty settings scale the encounter from easy to hard.</p>
               </div>
-              <div class="proj-view-divider"></div>
+              <div class="proj-detail-divider"></div>
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
@@ -280,10 +278,8 @@
                 <div class="proj-detail-block">
                   <h4>Tech Stack</h4>
                   <p>JavaScript, HTML/CSS, Python, Flask, OpenCV, MediaPipe Hands, MediaPipe Selfie Segmentation, scikit-learn</p>
-                  <div class="proj-detail-links">
-                    <a href="https://github.com/alwxngn/MaaaQuackhack" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
-                    <a href="https://devpost.com/software/combocraft-azuynr" target="_blank" rel="noopener" class="project-link">Devpost &rarr;</a>
-                  </div>
+                  <a href="https://github.com/alwxngn/MaaaQuackhack" target="_blank" rel="noopener" class="project-link-btn">GitHub &rarr;</a>
+                  <a href="https://devpost.com/software/combocraft-azuynr" target="_blank" rel="noopener" class="project-link-btn">Devpost &rarr;</a>
                 </div>
               </div>
               <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
@@ -337,6 +333,11 @@
           </button>
           <div class="proj-card-detail-wrap">
             <div class="proj-card-detail">
+              <div class="proj-detail-block" style="margin-bottom: 0;">
+                <h4>Description</h4>
+                <p>A full-stack point-of-sale web app with a 5-table relational database. Features 8+ REST API endpoints for full CRUD, 4 stored procedures for order workflows, and a loyalty points system tracking customer rewards and redemptions.</p>
+              </div>
+              <div class="proj-detail-divider"></div>
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
@@ -345,15 +346,7 @@
                 <div class="proj-detail-block">
                   <h4>Tech Stack</h4>
                   <p>Node.js, Express, MySQL, REST API, phpMyAdmin</p>
-                </div>
-              </div>
-              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
-                <h4>Description</h4>
-                <p>A full-stack point-of-sale web app with a 5-table relational database. Features 8+ REST API endpoints for full CRUD, 4 stored procedures for order workflows, and a loyalty points system tracking customer rewards and redemptions.</p>
-              </div>
-              <div class="proj-detail-footer">
-                <div class="proj-detail-links">
-                  <a href="https://github.com/allyytc/Sallys-POS" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
+                  <a href="https://github.com/allyytc/Sallys-POS" target="_blank" rel="noopener" class="project-link-btn">GitHub &rarr;</a>
                 </div>
               </div>
             </div>
@@ -377,6 +370,11 @@
           </button>
           <div class="proj-card-detail-wrap">
             <div class="proj-card-detail">
+              <div class="proj-detail-block" style="margin-bottom: 0;">
+                <h4>Description</h4>
+                <p>A multiplayer narrative simulation game with dynamic event systems and player-driven storytelling. Built 5+ modular systems (character tracking, branching event logic, leaderboard) using JSON-based data models over 3 months.</p>
+              </div>
+              <div class="proj-detail-divider"></div>
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
@@ -385,15 +383,7 @@
                 <div class="proj-detail-block">
                   <h4>Tech Stack</h4>
                   <p>JavaScript, HTML/CSS, Godot, JSON</p>
-                </div>
-              </div>
-              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
-                <h4>Description</h4>
-                <p>A multiplayer narrative simulation game with dynamic event systems and player-driven storytelling. Built 5+ modular systems (character tracking, branching event logic, leaderboard) using JSON-based data models over 3 months.</p>
-              </div>
-              <div class="proj-detail-footer">
-                <div class="proj-detail-links">
-                  <a href="https://bit.ly/afterlife-metro" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+                  <a href="https://bit.ly/afterlife-metro" target="_blank" rel="noopener" class="project-link-btn">View Project &rarr;</a>
                 </div>
               </div>
             </div>
@@ -414,6 +404,11 @@
           </button>
           <div class="proj-card-detail-wrap">
             <div class="proj-card-detail">
+              <div class="proj-detail-block" style="margin-bottom: 0;">
+                <h4>Description</h4>
+                <p>A machine learning pipeline that predicts dementia risk from health and lifestyle survey data, comparing multiple classification models and identifying the strongest predictive features for early-stage screening.</p>
+              </div>
+              <div class="proj-detail-divider"></div>
               <div class="proj-detail-grid">
                 <div class="proj-detail-block">
                   <h4>My Role</h4>
@@ -422,15 +417,7 @@
                 <div class="proj-detail-block">
                   <h4>Tech Stack</h4>
                   <p>Python, scikit-learn, Pandas, NumPy, Jupyter</p>
-                </div>
-              </div>
-              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
-                <h4>Description</h4>
-                <p>A machine learning pipeline that predicts dementia risk from health and lifestyle survey data, comparing multiple classification models and identifying the strongest predictive features for early-stage screening.</p>
-              </div>
-              <div class="proj-detail-footer">
-                <div class="proj-detail-links">
-                  <a href="https://github.com/allyytc/dementia-detector" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
+                  <a href="https://github.com/allyytc/dementia-detector" target="_blank" rel="noopener" class="project-link-btn">GitHub &rarr;</a>
                 </div>
               </div>
             </div>
