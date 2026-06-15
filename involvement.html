@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260619g" />
+  <link rel="stylesheet" href="style.css?v=20260620a" />
 </head>
 <body>
 
@@ -73,7 +73,7 @@
           .org-tab-date { font-size: 0.78rem; color: var(--text-light); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; transition: color 0.2s ease; }
           .org-tab.active .org-tab-date { color: rgba(232,220,197,0.5); }
 
-          .org-panel { background: var(--dark-bg); border-radius: 0.75rem; padding: 1.5rem; margin-top: 1rem; margin-left: 16rem; max-width: 70%; justify-self: start; }
+          .org-panel { background: var(--dark-bg); border-radius: 0.75rem; padding: 1.5rem; margin-top: 1rem; margin-left: 4rem; max-width: 100%; justify-self: start; }
           .org-photo-row { display: flex; gap: 1.5rem; align-items: stretch; }
           .org-photo-frame { position: relative; border-radius: 0.5rem; overflow: hidden; background: rgba(255,255,255,0.06); aspect-ratio: 3 / 4; flex: 1; min-width: 0; }
           .org-photo-frame.landscape { background: none; }
@@ -91,7 +91,7 @@
           .org-photo-frame.landscape img[src$="IMG_8555.jpg"] { width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: cover; object-position: center; }
           .org-photo-frame.landscape img[src$="IMG_8562.jpg"] { width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: cover; object-position: center; }
           .org-photo-frame img[src$="IMG_0068.JPG"] { transform: scale(1.35); transform-origin: center 70%; }
-          .org-panel-desc-col { display: flex; flex-direction: column; flex: 1.2; min-width: 0; padding: 0 3.5rem 0 1.5rem; }
+          .org-panel-desc-col { display: flex; flex-direction: column; flex: 1.2; min-width: 0; padding: 0 1.5rem 0 1rem; }
           .org-panel-title { font-family: var(--font-display); font-size: 2.4rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--cream); margin: 0 0 0.5rem; }
           .org-panel-meta { display: flex; flex-direction: column; gap: 0.2rem; margin-bottom: 1rem; }
           .org-panel-role { font-size: 0.85rem; color: rgba(232,220,197,0.85); letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
@@ -125,13 +125,18 @@
           .org-panel-desc p { margin: 0 0 0.9em; }
           .org-panel-desc p:last-child { margin-bottom: 0; }
 
-          @media (max-width: 860px) {
+          @media (max-width: 1280px) {
+            .org-panel { margin-left: 0; }
+            .org-panel-title { font-size: 2rem; }
+          }
+
+          @media (max-width: 1024px) {
             .org-layout { grid-template-columns: 1fr; gap: 1.5rem; }
             .org-photo-row { flex-direction: column; }
             .org-panel { max-width: 100%; margin-left: 0; }
           }
         </style>
-        <div class="section-inner" style="position: relative; padding-bottom: 4rem; padding-left: 10rem; padding-right: 10rem; max-width: 100%; margin: 0;">
+        <div class="section-inner org-section-inner" style="position: relative; padding-bottom: 4rem; max-width: 100%; margin: 0;">
           <div class="section-label-col" style="position: absolute; left: 0; top: 0; bottom: 0;">
             <span class="section-label section-label-lt">Clubs</span>
           </div>
@@ -196,7 +201,7 @@
           </div>
         </div>
       </section>
-    <div class="section-olive" style="padding: 4rem 10rem 5rem;">
+    <div class="section-olive events-section-olive">
       <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
         <h2 class="display-heading dh-light" style="margin-bottom: 0; white-space: nowrap;">Events</h2>
         <div style="flex: 1; border-top: 2px solid rgba(248,245,227,0.4);"></div>
