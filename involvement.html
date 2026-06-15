@@ -7,12 +7,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260620c" />
+  <link rel="stylesheet" href="style.css?v=20260622e" />
 </head>
 <body>
 
   <nav class="nav" id="nav" aria-label="Primary"></nav>
-  <script src="nav.js?v=3"></script>
+  <script src="nav.js?v=6"></script>
 
   <section class="section section-olive page-hero">
     <div class="section-inner page-hero-inner">
@@ -166,6 +166,18 @@
             .org-panel-desc-col { padding: 0; }
             .org-panel { max-width: 100%; margin-left: 0; }
           }
+
+          @media (max-width: 768px) {
+            .org-layout { gap: 1.25rem; }
+            .org-tab { padding: 0.85rem 1rem; }
+            .org-panel { padding: 1rem; margin-top: 0.5rem; }
+            .org-photo-frame {
+              width: 100%;
+              max-width: 100%;
+              margin: 0;
+            }
+            .org-left-col .display-heading { margin-bottom: 1.25rem; }
+          }
         </style>
         <div class="section-inner org-section-inner" style="position: relative; padding-bottom: 4rem; max-width: 100%; margin: 0;">
           <div class="section-label-col" style="position: absolute; left: 0; top: 0; bottom: 0;">
@@ -233,9 +245,8 @@
         </div>
       </section>
     <div class="section-olive events-section-olive">
-      <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
-        <h2 class="display-heading dh-light" style="margin-bottom: 0; white-space: nowrap;">Events</h2>
-        <div style="flex: 1; border-top: 2px solid rgba(248,245,227,0.4);"></div>
+      <div class="events-section-head">
+        <h2 class="display-heading dh-light">Events</h2>
       </div>
       <div class="event-card-grid">
 

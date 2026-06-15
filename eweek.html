@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260620b" />
+  <link rel="stylesheet" href="style.css?v=20260622e" />
   <style>
     /* Engineers' Week 2026 — slate navy & steel blue theme */
     :root {
@@ -67,14 +67,14 @@
     }
   </style>
 </head>
-<body>
+<body class="event-page">
 
   <nav class="nav" id="nav" aria-label="Primary"></nav>
-  <script src="nav.js?v=3"></script>
+  <script src="nav.js?v=6"></script>
 
   <!-- Hero -->
   <section class="section ew-dark" style="min-height: 80vh; display: flex; align-items: center; background-image: linear-gradient(rgba(14, 22, 36, 0.52), rgba(25, 55, 90, 0.44)), url('eweek/IMG_8414.jpg'); background-size: 115%; background-position: 20% 55%;">
-    <div class="section-inner" style="border-top: none; width: 100%; max-width: 100%; margin: 0; padding-top: 7rem; padding-left: clamp(2rem, 8%, 10rem); padding-bottom: 5rem;">
+    <div class="section-inner event-hero-inner" style="border-top: none; width: 100%; max-width: 100%; margin: 0; padding-top: 7rem; padding-left: clamp(2rem, 8%, 10rem); padding-bottom: 5rem;">
       <div class="section-body">
         <a href="involvement.html#events" style="display:inline-block; margin-bottom:1.5rem; font-size:0.9rem; color:rgba(255,255,255,0.58); text-decoration:none; letter-spacing:0.05em;">&larr; Back to Involvement</a>
         <h1 class="display-heading dh-light" style="font-size: clamp(4rem, 9vw, 7rem); color: #ffffff;">Engineers' Week<br/>2026</h1>
@@ -172,6 +172,14 @@
       .ew-carousel-arrow:hover { background: rgba(61, 143, 212, 0.75); }
       .ew-carousel-arrow--prev { left: 0; }
       .ew-carousel-arrow--next { right: 0; }
+      @media (max-width: 1024px) {
+        .ew-carousel-slide-inner,
+        .ew-carousel-slide img { height: 420px; }
+      }
+      @media (max-width: 640px) {
+        .ew-carousel-slide-inner,
+        .ew-carousel-slide img { height: 280px; }
+      }
     </style>
     <div class="ew-carousel" id="ewCarousel">
       <div class="ew-carousel-viewport">
@@ -303,7 +311,7 @@
       <div class="section-body">
         <h2 class="display-heading" style="font-size: clamp(3.5rem, 8vw, 6.5rem);">My Role</h2>
         <p style="max-width: 620px; margin: 1rem 0 2.5rem; color: rgba(255,255,255,0.72); line-height: 1.7; font-size: 1.1rem;">As Vice President of Outreach, I led all marketing and design for Engineers' Week &mdash; building the brand identity from the ground up, driving event promotion, and handling sticker design and production end-to-end.</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0; border-top: 1px solid rgba(61, 143, 212,0.2);">
+        <div class="event-role-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0; border-top: 1px solid rgba(61, 143, 212,0.2);">
           <div style="padding: 2rem 2rem 2rem 0; border-bottom: 1px solid rgba(61, 143, 212,0.1);">
             <div style="font-size: 0.85rem; color: rgba(61, 143, 212,0.6); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.6rem;">Branding</div>
             <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--ew-heading-light); margin-bottom: 0.75rem; letter-spacing: 0.04em;">Brand Identity</h3>
@@ -342,11 +350,11 @@
         <span class="section-label">Design</span>
       </div>
       <div class="section-body">
-        <div style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
+        <div class="event-sticker-layout" style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
           <!-- Design carousel -->
-          <div style="display: flex; align-items: center; gap: 1.25rem; flex-shrink: 0;">
+          <div class="event-sticker-panel" style="display: flex; align-items: center; gap: 1.25rem; flex-shrink: 0;">
             <button onclick="ewDesignCarousel(-1)" aria-label="Previous design" style="flex-shrink:0; background: rgba(61, 143, 212, 0.15); border: none; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--ew-heading-light); font-size: 1.2rem; transition: background 0.2s;" onmouseover="this.style.background='rgba(61, 143, 212, 0.3)'" onmouseout="this.style.background='rgba(61, 143, 212, 0.15)'">&#8592;</button>
-            <div style="width: 480px; height: 480px; background: var(--ew-alt); border-radius: 1rem; padding: 0.75rem; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="event-sticker-card" style="width: 480px; height: 480px; background: var(--ew-alt); border-radius: 1rem; padding: 0.75rem; display: flex; flex-direction: column; align-items: center; justify-content: center;">
               <div style="display: flex; align-items: center; justify-content: center; flex: 1; width: 100%; min-height: 0; overflow: hidden;">
                 <img id="ewDesignImg" src="eweek-stickers/E-week_Gear_Beaver.png" alt="Engineers' Week sticker design" style="width: 100%; height: 100%; object-fit: contain; display: block; transition: opacity 0.2s;" />
               </div>

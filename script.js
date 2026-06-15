@@ -1,11 +1,3 @@
-// Sticky nav shadow
-const nav = document.getElementById('nav');
-if (nav) {
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('nav-scrolled', window.scrollY > 10);
-  });
-}
-
 // Scroll-in fade animations
 const observer = new IntersectionObserver(
   (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),

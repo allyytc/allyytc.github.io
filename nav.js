@@ -74,13 +74,19 @@
         </div>
       </div>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-mobile-bar">
+      <a href="${homeRoot}" class="nav-home nav-mobile-home" aria-label="Home">AC</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
     <div class="nav-mobile-links" id="mobileLinks">
       <a href="${RESUME_URL}" class="nav-mobile-resume" target="_blank" rel="noopener">Resume</a>
       <div class="nav-mobile-group">
-        <button type="button" class="nav-mobile-group-toggle" aria-expanded="false">About Me</button>
+        <div class="nav-mobile-group-head">
+          <a href="${home('#about')}" class="nav-mobile-group-link">About Me</a>
+          <button type="button" class="nav-mobile-group-toggle" aria-expanded="false" aria-label="Toggle About Me submenu"></button>
+        </div>
         <div class="nav-mobile-submenu">
           <a href="${home('#experience')}">Experience</a>
           <a href="${home('#skills')}">Skills</a>
@@ -88,7 +94,10 @@
         </div>
       </div>
       <div class="nav-mobile-group">
-        <button type="button" class="nav-mobile-group-toggle" aria-expanded="false">Projects</button>
+        <div class="nav-mobile-group-head">
+          <a href="${projects('')}" class="nav-mobile-group-link">Projects</a>
+          <button type="button" class="nav-mobile-group-toggle" aria-expanded="false" aria-label="Toggle Projects submenu"></button>
+        </div>
         <div class="nav-mobile-submenu">
           <a href="${projects('#in-progress')}">In Progress</a>
           <a href="${projects('#hackathons')}">Hackathon Wins</a>
@@ -97,7 +106,10 @@
         </div>
       </div>
       <div class="nav-mobile-group">
-        <button type="button" class="nav-mobile-group-toggle" aria-expanded="false">Involvement</button>
+        <div class="nav-mobile-group-head">
+          <a href="${involvement('')}" class="nav-mobile-group-link">Involvement</a>
+          <button type="button" class="nav-mobile-group-toggle" aria-expanded="false" aria-label="Toggle Involvement submenu"></button>
+        </div>
         <div class="nav-mobile-submenu">
           <span class="nav-mobile-submenu-label">Clubs &amp; Orgs</span>
           <a href="${involvement('#clubs-coe')}">Engineering Student Council</a>
@@ -108,7 +120,10 @@
         </div>
       </div>
       <div class="nav-mobile-group">
-        <button type="button" class="nav-mobile-group-toggle" aria-expanded="false">Events</button>
+        <div class="nav-mobile-group-head">
+          <a href="${involvement('#events')}" class="nav-mobile-group-link">Events</a>
+          <button type="button" class="nav-mobile-group-toggle" aria-expanded="false" aria-label="Toggle Events submenu"></button>
+        </div>
         <div class="nav-mobile-submenu">
           <a href="innovation-jam-2026.html">Innovation Jam</a>
           <a href="beaverhacks-2026.html">BeaverHacks</a>
@@ -122,14 +137,25 @@
   }
 
   function initNavBehavior() {
+    const nav = document.getElementById('nav');
     const toggle = document.getElementById('navToggle');
     const mobileLinks = document.getElementById('mobileLinks');
+
+    if (nav) {
+      const onScroll = () => nav.classList.toggle('nav-scrolled', window.scrollY > 10);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
 
     if (toggle && mobileLinks) {
       toggle.addEventListener('click', () => mobileLinks.classList.toggle('open'));
       mobileLinks.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', () => mobileLinks.classList.remove('open'));
       });
+      const mobileHome = nav.querySelector('.nav-mobile-home');
+      if (mobileHome) {
+        mobileHome.addEventListener('click', () => mobileLinks.classList.remove('open'));
+      }
     }
 
     document.querySelectorAll('.nav-mobile-group-toggle').forEach((btn) => {
