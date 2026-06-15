@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20260620b" />
   <style>
     /* BeaverHacks 2026 — warm brown case-study theme */
     body { background: #433020; overflow-x: hidden; }
@@ -54,7 +54,7 @@
 <body>
 
   <nav class="nav" id="nav" aria-label="Primary"></nav>
-  <script src="nav.js?v=1"></script>
+  <script src="nav.js?v=2"></script>
 
   <!-- Hero -->
   <section class="section bh-dark" style="min-height: 80vh; display: flex; align-items: center; background-image: linear-gradient(rgba(20,20,20,0.55), rgba(20,20,20,0.55)), url('bh-event/gp1.JPG'); background-size: cover; background-position: center 48%;">
@@ -118,15 +118,11 @@
         transform: none;
       }
       .bh-carousel {
-        --bh-visible: 4;
         position: relative;
         max-width: 98vw;
         margin: 0 auto;
         padding: 0 0.5rem;
       }
-      @media (min-width: 1600px) { .bh-carousel { --bh-visible: 5; } }
-      @media (max-width: 1024px) { .bh-carousel { --bh-visible: 2; } }
-      @media (max-width: 640px)  { .bh-carousel { --bh-visible: 1; } }
 
       .bh-carousel-viewport { overflow: hidden; }
       .bh-carousel-track {
@@ -134,17 +130,30 @@
         will-change: transform;
       }
       .bh-carousel-slide {
-        flex: 0 0 calc(100% / var(--bh-visible));
+        flex: 0 0 auto;
         box-sizing: border-box;
         padding: 0 0.6rem;
+        overflow: visible;
+      }
+      .bh-carousel-slide-inner {
+        overflow: hidden;
+        display: inline-block;
+        height: 520px;
       }
       .bh-carousel-slide img {
-        width: 100%;
         height: 520px;
-        object-fit: cover;
-        border-radius: 0.75rem;
+        width: auto;
+        border-radius: 0;
         display: block;
         background: #e8e2d0;
+      }
+      @media (max-width: 1024px) {
+        .bh-carousel-slide-inner,
+        .bh-carousel-slide img { height: 420px; }
+      }
+      @media (max-width: 640px) {
+        .bh-carousel-slide-inner,
+        .bh-carousel-slide img { height: 320px; }
       }
       .bh-carousel-arrow {
         position: absolute;
@@ -193,12 +202,15 @@
           var slide = document.createElement('div');
           slide.className = 'bh-carousel-slide';
           if (classes[src]) slide.classList.add(classes[src]);
+          var inner = document.createElement('div');
+          inner.className = 'bh-carousel-slide-inner';
           var img = document.createElement('img');
           img.src = src;
           img.alt = alt;
           img.loading = 'lazy';
           if (filters[src]) img.style.filter = filters[src];
-          slide.appendChild(img);
+          inner.appendChild(img);
+          slide.appendChild(inner);
           track.appendChild(slide);
         });
 
@@ -487,6 +499,9 @@
         @media (max-width: 640px)  { .bh-carousel--portrait { --bh-photo-h: 360px; padding: 0 0.5rem; } }
         .bh-carousel--portrait .bh-carousel-slide {
           flex: 0 0 auto;
+        }
+        .bh-carousel--portrait .bh-carousel-slide-inner {
+          height: var(--bh-photo-h);
         }
         .bh-carousel--portrait .bh-carousel-slide img {
           width: auto;

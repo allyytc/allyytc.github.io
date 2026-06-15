@@ -86,6 +86,24 @@ body {
 .nav-inner > .nav-link:hover,
 .nav-item > .nav-link:hover { color: var(--nav-link-hover); }
 
+.nav-link--resume {
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.nav-mobile-resume {
+  display: block;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--nav-mobile-border);
+  text-decoration: none;
+  color: var(--nav-mobile-link-hover);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .nav-item {
   position: relative;
   display: flex;
@@ -1380,6 +1398,11 @@ body {
 }
 
 /* === Responsive === */
+@media (max-width: 1150px) {
+  .nav-inner { display: none; }
+  .nav-toggle { display: flex; }
+}
+
 @media (max-width: 1280px) {
   :root {
     --page-gutter: clamp(1.25rem, 3vw, 3.5rem);
