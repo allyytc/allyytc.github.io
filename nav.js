@@ -1,5 +1,5 @@
 (function () {
-  const RESUME_URL = 'allychen-resume2027.pdf';
+  const RESUME_URL = 'allychen-resume2028-pm.pdf';
 
   function getPageFile() {
     const parts = window.location.pathname.split('/');
