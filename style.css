@@ -2783,6 +2783,7 @@ body {
 
 /* Section heading row */
 .proj-section-head { margin-bottom: 3rem; }
+.proj-section-head--follow { margin-top: 5rem; }
 .proj-section-head .display-heading { margin-bottom: 0.75rem; }
 .proj-section-intro {
   font-size: 0.95rem;

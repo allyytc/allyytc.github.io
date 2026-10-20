@@ -168,6 +168,12 @@ const galleryData = {
   'cddc-donate': [
     { type: 'image', src: 'cddc-wireframes/donate.png', caption: 'Donate page wireframe' },
   ],
+  'impact-studio-live': [
+    { type: 'image', src: 'impact-live/home-desktop.webp', caption: 'Full-page screenshot of the live Impact Studio homepage on a desktop browser' },
+    { type: 'image', src: 'impact-live/about-desktop.webp', caption: 'Full-page screenshot of the live Impact Studio About page on a desktop browser' },
+    { type: 'image', src: 'impact-live/portfolio-desktop.webp', caption: 'Full-page screenshot of the live Impact Studio portfolio page on a desktop browser' },
+    { type: 'image', src: 'impact-live/home-mobile.webp', caption: 'Full-page screenshot of the live Impact Studio homepage at a mobile width' },
+  ],
 
   // --- Hackathon Wins -------------------------------------------
   'er-overwatch-demo': [
@@ -193,6 +199,23 @@ const galleryData = {
     { type: 'image', src: 'combo-game/gallery%20(1).jpg', caption: 'Boss fight — MediaPipe hand tracking and spell casting' },
     { type: 'image', src: 'combo-game/gallery%20(4).jpg', caption: 'Defeat Bosses — enemy selection screen' },
     { type: 'image', src: 'combo-game/gallery.jpg', caption: 'Victory screen — combo stats and final boss HP' },
+  ],
+  'korbit-demo': [
+    { type: 'video', src: 'https://www.youtube.com/embed/Ta64tj6uJc4', caption: 'KO.rbit demo — DubHacks 2026' },
+  ],
+  'korbit-interface': [
+    { type: 'image', src: 'korbit-gal/title.webp', caption: 'KO.rbit title screen on a starfield, with the prompt to begin a run' },
+    { type: 'image', src: 'korbit-gal/cockpit.webp', caption: 'KO.rbit 3D cockpit lobby, with a pilot at the console and a radar of nearby ships' },
+    { type: 'image', src: 'korbit-gal/duel.webp', caption: 'KO.rbit saber duel in a rocky arena, with health and stamina on the battle HUD' },
+    { type: 'image', src: 'korbit-gal/mars-arena.webp', caption: 'KO.rbit Mars arena at Jezero Crater, with a landed ship and two pilots on the terrain' },
+    { type: 'image', src: 'korbit-gal/solar-view.webp', caption: 'KO.rbit solar view of a banded planet, with the navigation menu open' },
+  ],
+  'lantern-demo': [
+    { type: 'video', src: 'https://www.youtube.com/embed/UiwDwaL6978', caption: 'Lantern demo — HackMIT 2026' },
+  ],
+  'lantern-interface': [
+    { type: 'image', src: 'lantern-gal/hero-dog.webp', caption: 'Lantern robot-dog render from the repository, with a glowing lantern on its back' },
+    { type: 'image', src: 'lantern-gal/hackmit.webp', caption: 'Lantern project image on the HackMIT 2026 page: a robot dog with a lantern, standing in a home' },
   ],
   'combocraft-gallery': [
     { type: 'image', src: 'combocraft-event/DSC01945.JPG', caption: '1st Place Overall — QuackHacks 2025' },
