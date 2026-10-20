@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260624j" />
+  <link rel="stylesheet" href="style.css?v=20261020a" />
 </head>
 <body>
 
@@ -82,6 +82,16 @@
                   <p>The old Impact Studio site buries its mission behind jargon-heavy copy, repeated information across pages, and no clear visual hierarchy. Font sizes are inconsistently small, spacing feels unbalanced, and a first-time visitor has to dig through multiple pages just to understand what Impact Studio actually does and who it serves.</p>
                   <a href="https://impactstudio.oregonstate.edu/" target="_blank" rel="noopener" class="project-link-btn">Site Progress &rarr;</a>
                 </div>
+              </div>
+              <div class="proj-detail-divider"></div>
+              <div class="thumb-strip-head">
+                <div class="thumb-strip-label">Live Site</div>
+              </div>
+              <div class="thumb-strip">
+                <button class="thumb-btn" data-gallery="impact-studio-live" data-index="0">Homepage</button>
+                <button class="thumb-btn" data-gallery="impact-studio-live" data-index="1">About</button>
+                <button class="thumb-btn" data-gallery="impact-studio-live" data-index="2">Portfolio</button>
+                <button class="thumb-btn" data-gallery="impact-studio-live" data-index="3">Mobile</button>
               </div>
               <div hidden>
                 <div class="proj-detail-divider"></div>
@@ -178,6 +188,71 @@
       </div>
 
       <div class="proj-grid proj-grid-2">
+
+        <!-- Card: KO.rbit -->
+        <div class="proj-card" id="project-korbit">
+          <button class="proj-card-header" aria-expanded="false">
+            <div class="proj-card-title-row">
+              <div class="proj-card-title-line">
+                <h3>KO.rbit</h3>
+                <span class="proj-card-badge proj-card-badge--win">1st Place &mdash; SpaceXAI Track, DubHacks 2026</span>
+              </div>
+              <span class="proj-toggle-icon">+</span>
+            </div>
+            <p class="proj-card-desc">A real-time two-player lightsaber duel with no controller. A laptop webcam tracks your full body with MediaPipe Pose, and your phone becomes the saber.</p>
+            <div class="project-tags">
+              <span>React</span><span>TypeScript</span><span>JavaScript</span><span>Three.js</span><span>Vite</span><span>MediaPipe</span><span>Node.js</span><span>Socket.IO</span><span>WebGL</span><span>Perceptron</span>
+            </div>
+          </button>
+          <div class="proj-card-detail-wrap">
+            <div class="proj-card-detail proj-has-view">
+              <div class="proj-detail-block" style="margin-bottom: 0;">
+                <h4>Description</h4>
+                <p>KO.rbit is a real-time, two-player lightsaber duel with no controller, built by our four-person team at DubHacks 2026. A laptop webcam tracks your full body with MediaPipe Pose, and your phone&rsquo;s motion sensors become the saber. Before the fight, we fly a 3D cockpit through a universe of real catalogued objects. Planetary roulette then sends the match to Mars or Neptune.</p>
+              </div>
+              <div class="proj-detail-divider"></div>
+              <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>My Role</h4>
+                  <ul>
+                    <li><strong>3D cockpit lobby</strong> &mdash; the hub a pilot drops into, with the radar and ship console</li>
+                    <li><strong>Avatar creator</strong> &mdash; the pilot&rsquo;s avatar</li>
+                    <li><strong>Battle HUD</strong> &mdash; the overlay on the live duel</li>
+                    <li><strong>Mars arena</strong> &mdash; the Jezero Crater fight floor, built on NASA MOLA terrain</li>
+                    <li><strong>Neptune arena</strong> &mdash; the duel scene modeled on Neptune&rsquo;s atmosphere, since Neptune has no solid ground</li>
+                    <li><strong>Planetary roulette</strong> &mdash; the spin that picks Mars or Neptune, then flies the match in</li>
+                  </ul>
+                </div>
+                <div class="proj-detail-block">
+                  <h4>Tech Stack</h4>
+                  <p>React, TypeScript, JavaScript, Vite, Three.js, React Three Fiber, WebGL, MediaPipe Pose, Node.js, Socket.IO, Perceptron, and Python importers for NASA, JPL, CelesTrak, and HYG catalogs. We also use xAI Grok Voice for LYRA, the in-game voice copilot.</p>
+                  <a href="https://github.com/dubhack26/KO.rbit" target="_blank" rel="noopener" class="project-link-btn">GitHub &rarr;</a>
+                  <a href="https://devpost.com/software/space-battles-aei3wz" target="_blank" rel="noopener" class="project-link-btn">Devpost &rarr;</a>
+                  <a href="https://www.youtube.com/watch?v=Ta64tj6uJc4" target="_blank" rel="noopener" class="project-link-btn">Demo &rarr;</a>
+                </div>
+              </div>
+              <div class="proj-detail-block" style="margin-bottom: 1.5rem;">
+                <h4>Features</h4>
+                <ul>
+                  <li><strong>Full-body duel</strong> &mdash; MediaPipe Pose on the laptop and the phone as the saber, paired by QR code</li>
+                  <li><strong>Server-owned hits</strong> &mdash; a Node and Socket.IO server decides health, stamina, guards, and every hit</li>
+                  <li><strong>Cockpit and roulette</strong> &mdash; a 3D lobby, then a planetary roulette handoff into the Mars or Neptune arena</li>
+                  <li><strong>Real Mars terrain</strong> &mdash; the Mars floor is a NASA MOLA crop of Jezero Crater</li>
+                  <li><strong>Catalog explorer</strong> &mdash; we search real stars, exoplanets, galaxies, satellites, and spacecraft and open a fact card on each</li>
+                  <li><strong>KO replay</strong> &mdash; an opt-in clip, with Perceptron picking highlights and the replay ending on the server-confirmed finishing blow</li>
+                </ul>
+              </div>
+              <div class="proj-view-divider"></div>
+              <div class="thumb-strip-head">
+                <div class="thumb-strip-label">View Project</div>
+                <div class="thumb-strip">
+                  <button class="thumb-btn" data-gallery="korbit-demo" data-index="0">Demo Video</button>
+                  <button class="thumb-btn" data-gallery="korbit-interface" data-index="0">Screenshots</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Card: ER Overwatch -->
         <div class="proj-card">
@@ -301,6 +376,65 @@
                   <button class="thumb-btn" data-gallery="combocraft-demo" data-index="0">Demo Video</button>
                   <button class="thumb-btn" data-gallery="combocraft-interface" data-index="0">Interface</button>
                   <button class="thumb-btn" data-gallery="combocraft-gallery" data-index="0">Gallery</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="proj-section-head proj-section-head--follow" id="hackathon-projects">
+        <h2 class="display-heading dh-light">Hackathon Projects</h2>
+        <p class="proj-section-intro">Built at HackMIT 2026.</p>
+      </div>
+
+      <div class="proj-grid proj-grid-2">
+
+        <!-- Card: Lantern -->
+        <div class="proj-card" id="project-lantern">
+          <button class="proj-card-header" aria-expanded="false">
+            <div class="proj-card-title-row">
+              <h3>Lantern</h3>
+              <span class="proj-toggle-icon">+</span>
+            </div>
+            <p class="proj-card-desc">A Unitree Go2 companion for someone living with dementia, with a caregiver app for voice check-ins, Night Watch alerts, and a map of the home. We built it at HackMIT 2026.</p>
+            <div class="project-tags">
+              <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span><span>Python</span><span>FastAPI</span><span>Deepgram</span><span>ElevenLabs</span><span>Twilio</span><span>DimOS</span>
+            </div>
+          </button>
+          <div class="proj-card-detail-wrap">
+            <div class="proj-card-detail proj-has-view">
+              <div class="proj-detail-block" style="margin-bottom: 0;">
+                <h4>Description</h4>
+                <p>Lantern is a robot companion for someone living with dementia, and a link for the family members who look after them. We built the prototype in 24 hours at HackMIT 2026 (September 19&ndash;20). The idea came from a teammate&rsquo;s grandmother. After the family dog was no longer at home, she was alone for much of the day, and she did not want to wear a location tracker.</p>
+                <p>The phone is the microphone and speaker. She talks to Lantern instead of using a screen. For the family, a web app shows how she is doing, plays check-ins aloud, and sends alerts if she moves into a place the caregivers marked as dangerous.</p>
+              </div>
+              <div class="proj-detail-divider"></div>
+              <div class="proj-detail-grid">
+                <div class="proj-detail-block">
+                  <h4>What we built</h4>
+                  <ul>
+                    <li><strong>Caregiver portal</strong> &mdash; onboarding, check-ins, a daily routine, Night Watch, a zone map, alerts, and an activity timeline</li>
+                    <li><strong>Paired phone</strong> &mdash; QR pairing, ElevenLabs playback of a check-in, and a short reply transcribed with Deepgram</li>
+                    <li><strong>Robot requests</strong> &mdash; spoken phrases can walk, follow, return home, or play a fixed set of Go2 actions when DimOS and the robot bridges are running</li>
+                    <li><strong>Night Watch</strong> &mdash; caregivers paint zones, and alerts can escalate to Twilio SMS and phone calls</li>
+                  </ul>
+                </div>
+                <div class="proj-detail-block">
+                  <h4>Tech Stack</h4>
+                  <p>React, TypeScript, Vite, Tailwind CSS, FastAPI, Python, Deepgram, ElevenLabs, Twilio, and DimOS on a Unitree Go2. The phone does not talk to the robot directly. It goes through our cloud app and the bus.</p>
+                  <a href="https://github.com/alwxngn/Lantern-HackMIT2026" target="_blank" rel="noopener" class="project-link-btn">GitHub &rarr;</a>
+                  <a href="https://plume.hackmit.org/project/krpqx-lffop-wpuom-ttmme" target="_blank" rel="noopener" class="project-link-btn">HackMIT &rarr;</a>
+                  <a href="https://www.youtube.com/watch?v=UiwDwaL6978" target="_blank" rel="noopener" class="project-link-btn">Demo &rarr;</a>
+                </div>
+              </div>
+              <div class="proj-view-divider"></div>
+              <div class="thumb-strip-head">
+                <div class="thumb-strip-label">View Project</div>
+                <div class="thumb-strip">
+                  <button class="thumb-btn" data-gallery="lantern-demo" data-index="0">Demo Video</button>
+                  <button class="thumb-btn" data-gallery="lantern-interface" data-index="0">Images</button>
                 </div>
               </div>
             </div>
@@ -629,6 +763,6 @@
   </div>
 
   <script src="script.js"></script>
-  <script src="projects.js?v=20260620a"></script>
+  <script src="projects.js?v=20261020a"></script>
 </body>
 </html>
