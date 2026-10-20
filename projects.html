@@ -7,12 +7,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20261020a" />
+  <link rel="stylesheet" href="style.css?v=20261020d" />
 </head>
 <body>
 
   <nav class="nav" id="nav" aria-label="Primary"></nav>
-  <script src="nav.js?v=8"></script>
+  <script src="nav.js?v=9"></script>
 
   <section class="section section-olive page-hero">
     <div class="section-inner page-hero-inner">
@@ -26,11 +26,11 @@
           </div>
           <div class="involvement-hero-copy">
             <h1 class="display-heading dh-light">What I've Been<br/>Building</h1>
-            <p>A mix of active builds, hackathon wins, class projects, and design work &mdash; spanning full-stack web apps, computer vision, and UI/UX design.</p>
+            <p>A mix of active builds, hackathon projects, class projects, and design work &mdash; spanning full-stack web apps, computer vision, and UI/UX design.</p>
             <p class="involvement-hero-lead">Click a card to see the full breakdown, current status, and early previews.</p>
             <div class="page-hero-actions page-hero-actions--grid">
               <a href="#in-progress" class="page-hero-btn page-hero-btn--primary">In Progress</a>
-              <a href="#hackathons" class="page-hero-btn page-hero-btn--primary">Hackathon Wins</a>
+              <a href="#hackathons" class="page-hero-btn page-hero-btn--primary">Hackathon Projects</a>
               <a href="#past-projects" class="page-hero-btn page-hero-btn--primary">Past Projects</a>
               <a href="#design-work" class="page-hero-btn page-hero-btn--primary">Design Work</a>
             </div>
@@ -179,12 +179,13 @@
     </div>
   </section>
   <!-- ============================================================
-       Hackathon Wins
+       Hackathon Projects
+       #hackathons and #hackathon-projects both land on this section.
        ============================================================ -->
   <section class="section section-dark" id="hackathons">
     <div class="section-inner-full">
-      <div class="proj-section-head">
-        <h2 class="display-heading dh-light">Hackathon Wins</h2>
+      <div class="proj-section-head" id="hackathon-projects">
+        <h2 class="display-heading dh-light">Hackathon Projects</h2>
       </div>
 
       <div class="proj-grid proj-grid-2">
@@ -195,7 +196,7 @@
             <div class="proj-card-title-row">
               <div class="proj-card-title-line">
                 <h3>KO.rbit</h3>
-                <span class="proj-card-badge proj-card-badge--win">1st Place &mdash; SpaceXAI Track, DubHacks 2026</span>
+                <span class="proj-card-badge proj-card-badge--win">&#127942; 1st Place SpaceXAI Track, DubHacks 2026</span>
               </div>
               <span class="proj-toggle-icon">+</span>
             </div>
@@ -260,7 +261,7 @@
             <div class="proj-card-title-row">
               <div class="proj-card-title-line">
                 <h3>ER Overwatch</h3>
-                <span class="proj-card-badge proj-card-badge--win">1st Place Overall &mdash; QuackHacks 2026</span>
+                <span class="proj-card-badge proj-card-badge--win">&#127942; 1st Place Overall, QuackHacks 2026</span>
               </div>
               <span class="proj-toggle-icon">+</span>
             </div>
@@ -323,7 +324,7 @@
             <div class="proj-card-title-row">
               <div class="proj-card-title-line">
                 <h3>ComboCraft</h3>
-                <span class="proj-card-badge proj-card-badge--win">1st Place Overall &mdash; QuackHacks 2025</span>
+                <span class="proj-card-badge proj-card-badge--win">&#127942; 1st Place, QuackHacks 2025</span>
               </div>
               <span class="proj-toggle-icon">+</span>
             </div>
@@ -355,7 +356,7 @@
                 <div class="proj-detail-block">
                   <h4>Tech Stack</h4>
                   <p>JavaScript, HTML/CSS, Python, Flask, OpenCV, MediaPipe Hands, MediaPipe Selfie Segmentation, scikit-learn</p>
-                  <a href="https://github.com/alwxngn/MaaaQuackhack" target="_blank" rel="noopener" class="project-link-btn">GitHub &rarr;</a>
+                  <a href="https://github.com/alwxngn/ComboCraft" target="_blank" rel="noopener" class="project-link-btn">GitHub &rarr;</a>
                   <a href="https://devpost.com/software/combocraft-azuynr" target="_blank" rel="noopener" class="project-link-btn">Devpost &rarr;</a>
                 </div>
               </div>
@@ -382,20 +383,14 @@
           </div>
         </div>
 
-      </div>
-
-      <div class="proj-section-head proj-section-head--follow" id="hackathon-projects">
-        <h2 class="display-heading dh-light">Hackathon Projects</h2>
-        <p class="proj-section-intro">Built at HackMIT 2026.</p>
-      </div>
-
-      <div class="proj-grid proj-grid-2">
-
         <!-- Card: Lantern -->
         <div class="proj-card" id="project-lantern">
           <button class="proj-card-header" aria-expanded="false">
             <div class="proj-card-title-row">
-              <h3>Lantern</h3>
+              <div class="proj-card-title-line">
+                <h3>Lantern</h3>
+                <span class="proj-card-badge proj-card-badge--win">HackMIT 2026</span>
+              </div>
               <span class="proj-toggle-icon">+</span>
             </div>
             <p class="proj-card-desc">A Unitree Go2 companion for someone living with dementia, with a caregiver app for voice check-ins, Night Watch alerts, and a map of the home. We built it at HackMIT 2026.</p>
@@ -519,6 +514,7 @@
                 <div class="proj-detail-block">
                   <h4>Tech Stack</h4>
                   <p>JavaScript, HTML/CSS, Godot, JSON</p>
+                  <a href="https://github.com/osu-cs290-f25/project-afterlife-metro" target="_blank" rel="noopener" class="project-link-btn">GitHub &rarr;</a>
                   <a href="https://bit.ly/afterlife-metro" target="_blank" rel="noopener" class="project-link-btn">View Project &rarr;</a>
                 </div>
               </div>

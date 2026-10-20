@@ -48,7 +48,7 @@
         <a href="${projects('')}" class="nav-link">Projects</a>
         <div class="nav-dropdown">
           <a href="${projects('#in-progress')}">In Progress</a>
-          <a href="${projects('#hackathons')}">Hackathon Wins</a>
+          <a href="${projects('#hackathons')}">Hackathon Projects</a>
           <a href="${projects('#past-projects')}">Past Projects</a>
           <a href="${projects('#design-work')}">Design Work</a>
         </div>
@@ -100,7 +100,7 @@
         </div>
         <div class="nav-mobile-submenu">
           <a href="${projects('#in-progress')}">In Progress</a>
-          <a href="${projects('#hackathons')}">Hackathon Wins</a>
+          <a href="${projects('#hackathons')}">Hackathon Projects</a>
           <a href="${projects('#past-projects')}">Past Projects</a>
           <a href="${projects('#design-work')}">Design Work</a>
         </div>

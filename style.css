@@ -1945,9 +1945,9 @@ body {
     font-size: 0.5rem !important;
     letter-spacing: 0.06em !important;
     padding: 0.22rem 0.55rem !important;
-    white-space: nowrap !important;
+    white-space: normal !important;
     width: fit-content;
-    max-width: none;
+    max-width: 100%;
   }
 
   #hackathons .proj-card-title-line {
@@ -2893,8 +2893,10 @@ body {
   border: 1px solid rgba(232, 220, 197, 0.28);
   border-radius: 2em;
   box-shadow: none;
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.35;
   width: fit-content;
+  max-width: 100%;
 }
 .section-dark .proj-card-badge--win,
 .section-walnut .proj-card-badge--win {
