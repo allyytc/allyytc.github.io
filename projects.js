@@ -236,7 +236,12 @@ const galleryData = {
     { type: 'image', src: 'afterlife-metro/split-screen.webp', caption: 'Split-screen in the Afterlife Metro browser game (Godot 4.5 web build). The Human\u2019s view is on the left and the Ghost\u2019s view is on the right. The Ghost sees puzzle objects the Human can\u2019t. Game art by Nour Alzahraa Alqattan.' },
     { type: 'image', src: 'afterlife-metro/puzzle-room.webp', caption: 'Exploring a puzzle room in Afterlife Metro, a Godot 4.5 browser game. Game art by Nour Alzahraa Alqattan.' },
     { type: 'image', src: 'afterlife-metro/home.webp', caption: 'Afterlife Metro home screen in the Godot 4.5 web build. Game art by Nour Alzahraa Alqattan.' },
+    { type: 'image', src: 'afterlife-metro/intro-memory.webp', caption: 'Intro in the Afterlife Metro browser game (Godot 4.5 web build). A timer and Pause control sit above a memory-fragment passage about Hugh slipping or being pushed, then waking on an empty bench. The pixel-art scene shows a bench and a ghost figure. Game art by Nour Alzahraa Alqattan.' },
+    { type: 'image', src: 'afterlife-metro/story-dialogue.webp', caption: 'Story dialogue in the Afterlife Metro browser game (Godot 4.5 web build). A timer and Pause control sit above text of Violet speaking to Hugh in a dark tunnel. Game art by Nour Alzahraa Alqattan.' },
+    { type: 'image', src: 'afterlife-metro/instructions.webp', caption: 'Afterlife Metro instructions page, at the overview. It describes a 2D pixel-art co-op adventure where you play as a human or a ghost. Ghost moves with the arrow keys, and Player moves with WASD. Game art by Nour Alzahraa Alqattan.' },
+    { type: 'image', src: 'afterlife-metro/instructions-scrolled.webp', caption: 'Afterlife Metro instructions page, scrolled to the gameplay tips and Starting the Game. The tips mention the timer and the leaderboard, and the page says to click Start Game on the homepage. A Back to Home button is at the bottom. Game art by Nour Alzahraa Alqattan.' },
     { type: 'image', src: 'afterlife-metro/leaderboard.webp', caption: 'Afterlife Metro leaderboard from the Express server. The listed names are test entries: testing, hello world, and losing.' },
+    { type: 'image', src: 'afterlife-metro/pause-menu.webp', caption: 'Pause menu in the Afterlife Metro browser game (Godot 4.5 web build), over a pixel-art scene. The menu is titled Paused and has Resume and Quit buttons. Game art by Nour Alzahraa Alqattan.' },
   ],
 
 };
