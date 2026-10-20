@@ -209,6 +209,12 @@ const galleryData = {
   ],
 
   // --- Past Projects ---------------------------------------------
+  'afterlife-metro': [
+    { type: 'image', src: 'afterlife-metro/split-screen.webp', caption: 'Split-screen in the Afterlife Metro browser game (Godot 4.5 web build). The Human\u2019s view is on the left and the Ghost\u2019s view is on the right. The Ghost sees puzzle objects the Human can\u2019t.' },
+    { type: 'image', src: 'afterlife-metro/puzzle-room.webp', caption: 'Exploring a puzzle room in Afterlife Metro, a Godot 4.5 browser game.' },
+    { type: 'image', src: 'afterlife-metro/home.webp', caption: 'Afterlife Metro home screen in the Godot 4.5 web build.' },
+    { type: 'image', src: 'afterlife-metro/leaderboard.webp', caption: 'Afterlife Metro leaderboard from the Express server. The listed names are test entries: testing, hello world, and losing.' },
+  ],
 
 };
 
