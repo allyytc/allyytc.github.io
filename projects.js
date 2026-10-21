@@ -213,10 +213,6 @@ const galleryData = {
   'lantern-demo': [
     { type: 'video', src: 'https://www.youtube.com/embed/UiwDwaL6978', caption: 'Lantern demo — HackMIT 2026' },
   ],
-  'lantern-interface': [
-    { type: 'image', src: 'lantern-gal/hero-dog.webp', caption: 'Lantern robot-dog render from the repository, with a glowing lantern on its back' },
-    { type: 'image', src: 'lantern-gal/hackmit.webp', caption: 'Lantern project image on the HackMIT 2026 page: a robot dog with a lantern, standing in a home' },
-  ],
   'combocraft-gallery': [
     { type: 'image', src: 'combocraft-event/DSC01945.JPG', caption: '1st Place Overall — QuackHacks 2025' },
     { type: 'video', src: 'combocraft-event/MAH01763.MP4', caption: 'ComboCraft at QuackHacks 2025 — event footage' },
