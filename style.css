@@ -2503,7 +2503,7 @@ body {
     padding: 0.38rem 0.8rem !important;
   }
 
-  /* Involvement — clubs & org panels */
+  /* Involvement - clubs & org panels */
   .org-section-inner {
     padding: 3rem var(--m-gutter) !important;
   }
@@ -2592,7 +2592,7 @@ body {
     padding: 0 !important;
   }
 
-  /* Experience section — headers must read larger than body */
+  /* Experience section - headers must read larger than body */
   #experience .display-heading,
   .exp-col .display-heading {
     font-size: var(--m-h2) !important;
@@ -2648,7 +2648,7 @@ body {
     margin-bottom: 0.85rem;
   }
 
-  /* Mobile site template — match #about rhythm across pages */
+  /* Mobile site template - match #about rhythm across pages */
   .section-body p,
   .involvement-hero-copy p,
   .proj-section-intro,
@@ -3186,7 +3186,7 @@ body {
   opacity: 0.85;
 }
 
-/* Hackathon expanded panels sit on cream — green buttons by default. */
+/* Hackathon expanded panels sit on cream - green buttons by default. */
 #hackathons .thumb-btn {
   background: var(--dark-bg);
   border-color: var(--dark-bg);

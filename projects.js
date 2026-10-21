@@ -148,10 +148,10 @@ const galleryData = {
 
   // --- Projects In Progress -----------------------------------
   'impact-studio-homepage': [
-    { type: 'image', src: 'impact-wireframe/mock%203.png', caption: 'Homepage redesign — hero, approach, and lifecycle process' },
+    { type: 'image', src: 'impact-wireframe/mock%203.png', caption: 'Homepage redesign - hero, approach, and lifecycle process' },
   ],
   'impact-studio-about': [
-    { type: 'image', src: 'impact-wireframe/mock%201.png', caption: 'About Us page — mission and team directory' },
+    { type: 'image', src: 'impact-wireframe/mock%201.png', caption: 'About Us page - mission and team directory' },
   ],
   'cddc-home': [
     { type: 'image', src: 'cddc-wireframes/home.png', caption: 'Homepage wireframe' },
@@ -177,31 +177,31 @@ const galleryData = {
 
   // --- Hackathon Wins -------------------------------------------
   'er-overwatch-demo': [
-    { type: 'video', src: 'https://www.youtube.com/embed/7biBbQWCngY', caption: 'ER Overwatch demo — QuackHacks 2026' },
+    { type: 'video', src: 'https://www.youtube.com/embed/7biBbQWCngY', caption: 'ER Overwatch demo - QuackHacks 2026' },
   ],
   'er-overwatch-interface': [
     { type: 'image', src: 'ero-gal/image-02.webp', caption: 'System workflow diagram' },
-    { type: 'image', src: 'ero-gal/nursedash.webp', caption: 'Nurse dashboard — live patient queue and alerts' },
-    { type: 'image', src: 'ero-gal/fall-alert.webp', caption: 'Fall detection alert — critical emergency modal' },
-    { type: 'image', src: 'ero-gal/patient.webp', caption: 'Patient wait portal — queue position and ER status' },
+    { type: 'image', src: 'ero-gal/nursedash.webp', caption: 'Nurse dashboard - live patient queue and alerts' },
+    { type: 'image', src: 'ero-gal/fall-alert.webp', caption: 'Fall detection alert - critical emergency modal' },
+    { type: 'image', src: 'ero-gal/patient.webp', caption: 'Patient wait portal - queue position and ER status' },
     { type: 'image', src: 'ero-gal/qr.webp', caption: 'Patient check-in flow' },
   ],
   'er-overwatch-gallery': [
     { type: 'image', src: 'ero-gal/awards/IMG_2647.WEBP', caption: 'Team on stage at QuackHacks 3' },
-    { type: 'image', src: 'ero-gal/awards/IMG_2654.WEBP', caption: 'QuackHacks 3 — judging' },
+    { type: 'image', src: 'ero-gal/awards/IMG_2654.WEBP', caption: 'QuackHacks 3 - judging' },
   ],
   'combocraft-demo': [
-    { type: 'video', src: 'https://www.youtube.com/embed/xNuD9hViZFQ', caption: 'ComboCraft demo — QuackHacks 2025' },
+    { type: 'video', src: 'https://www.youtube.com/embed/xNuD9hViZFQ', caption: 'ComboCraft demo - QuackHacks 2025' },
   ],
   'combocraft-interface': [
-    { type: 'image', src: 'combo-game/gallery%20(6).jpg', caption: 'Main menu — Enter the Inferno' },
-    { type: 'image', src: 'combo-game/gallery%20(5).jpg', caption: 'How to Play — gesture tutorial and battle tips' },
-    { type: 'image', src: 'combo-game/gallery%20(1).jpg', caption: 'Boss fight — MediaPipe hand tracking and spell casting' },
-    { type: 'image', src: 'combo-game/gallery%20(4).jpg', caption: 'Defeat Bosses — enemy selection screen' },
-    { type: 'image', src: 'combo-game/gallery.jpg', caption: 'Victory screen — combo stats and final boss HP' },
+    { type: 'image', src: 'combo-game/gallery%20(6).jpg', caption: 'Main menu - Enter the Inferno' },
+    { type: 'image', src: 'combo-game/gallery%20(5).jpg', caption: 'How to Play - gesture tutorial and battle tips' },
+    { type: 'image', src: 'combo-game/gallery%20(1).jpg', caption: 'Boss fight - MediaPipe hand tracking and spell casting' },
+    { type: 'image', src: 'combo-game/gallery%20(4).jpg', caption: 'Defeat Bosses - enemy selection screen' },
+    { type: 'image', src: 'combo-game/gallery.jpg', caption: 'Victory screen - combo stats and final boss HP' },
   ],
   'korbit-demo': [
-    { type: 'video', src: 'https://www.youtube.com/embed/Ta64tj6uJc4', caption: 'KO.rbit demo — DubHacks 2026' },
+    { type: 'video', src: 'https://www.youtube.com/embed/Ta64tj6uJc4', caption: 'KO.rbit demo - DubHacks 2026' },
   ],
   'korbit-interface': [
     { type: 'image', src: 'korbit-gal/title.webp', caption: 'KO.rbit title screen on a starfield, with the prompt to begin a run' },
@@ -211,20 +211,20 @@ const galleryData = {
     { type: 'image', src: 'korbit-gal/solar-view.webp', caption: 'KO.rbit solar view of a banded planet, with the navigation menu open' },
   ],
   'lantern-demo': [
-    { type: 'video', src: 'https://www.youtube.com/embed/UiwDwaL6978', caption: 'Lantern demo — HackMIT 2026' },
+    { type: 'video', src: 'https://www.youtube.com/embed/UiwDwaL6978', caption: 'Lantern demo - HackMIT 2026' },
   ],
   'combocraft-gallery': [
-    { type: 'image', src: 'combocraft-event/DSC01945.JPG', caption: '1st Place Overall — QuackHacks 2025' },
-    { type: 'video', src: 'combocraft-event/MAH01763.MP4', caption: 'ComboCraft at QuackHacks 2025 — event footage' },
-    { type: 'image', src: 'combocraft-event/DSC01841.JPG', caption: 'Final judging stage — presentation and live demo' },
-    { type: 'image', src: 'combocraft-event/DSC01844.JPG', caption: 'Final judging stage — presentation and live demo' },
-    { type: 'image', src: 'combocraft-event/DSC01845.JPG', caption: 'Final judging stage — presentation and live demo' },
-    { type: 'image', src: 'combocraft-event/DSC01846.JPG', caption: 'Final judging stage — presentation and live demo' },
-    { type: 'image', src: 'combocraft-event/IMG_2987.JPG', caption: 'Judging stage — Pipeworks judges' },
-    { type: 'image', src: 'combocraft-event/IMG_2988.JPG', caption: 'Judging stage — Pipeworks judges' },
-    { type: 'image', src: 'combocraft-event/IMG_2986.JPG', caption: 'Judging stage — Pipeworks judges' },
-    { type: 'image', src: 'combocraft-event/IMG_2989.JPG', caption: 'Project fair — staff stopped by to play' },
-    { type: 'image', src: 'combocraft-event/IMG_2990.JPG', caption: 'Project fair — staff stopped by to play' },
+    { type: 'image', src: 'combocraft-event/DSC01945.JPG', caption: '1st Place Overall - QuackHacks 2025' },
+    { type: 'video', src: 'combocraft-event/MAH01763.MP4', caption: 'ComboCraft at QuackHacks 2025 - event footage' },
+    { type: 'image', src: 'combocraft-event/DSC01841.JPG', caption: 'Final judging stage - presentation and live demo' },
+    { type: 'image', src: 'combocraft-event/DSC01844.JPG', caption: 'Final judging stage - presentation and live demo' },
+    { type: 'image', src: 'combocraft-event/DSC01845.JPG', caption: 'Final judging stage - presentation and live demo' },
+    { type: 'image', src: 'combocraft-event/DSC01846.JPG', caption: 'Final judging stage - presentation and live demo' },
+    { type: 'image', src: 'combocraft-event/IMG_2987.JPG', caption: 'Judging stage - Pipeworks judges' },
+    { type: 'image', src: 'combocraft-event/IMG_2988.JPG', caption: 'Judging stage - Pipeworks judges' },
+    { type: 'image', src: 'combocraft-event/IMG_2986.JPG', caption: 'Judging stage - Pipeworks judges' },
+    { type: 'image', src: 'combocraft-event/IMG_2989.JPG', caption: 'Project fair - staff stopped by to play' },
+    { type: 'image', src: 'combocraft-event/IMG_2990.JPG', caption: 'Project fair - staff stopped by to play' },
   ],
 
   // --- Past Projects ---------------------------------------------
@@ -375,7 +375,7 @@ if (designItems.length) {
     const img = item.querySelector('img');
     const title = item.querySelector('.design-gallery-title');
     const cat = item.querySelector('.design-gallery-cat');
-    const caption = [title, cat].filter(Boolean).map(el => el.textContent.trim()).join(' — ');
+    const caption = [title, cat].filter(Boolean).map(el => el.textContent.trim()).join(' - ');
     const src = type === 'pdf'
       ? item.dataset.src
       : (img ? img.getAttribute('src') : '');
